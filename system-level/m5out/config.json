@@ -1,0 +1,2339 @@
+{
+    "type": "Root",
+    "cxx_class": "Root",
+    "name": null,
+    "path": "root",
+    "eventq_index": 0,
+    "full_system": false,
+    "sim_quantum": 0,
+    "time_sync_enable": false,
+    "time_sync_period": 100000000000,
+    "time_sync_spin_threshold": 100000000,
+    "cltsys": [
+        {
+            "type": "System",
+            "cxx_class": "System",
+            "name": "cltsys",
+            "path": "cltsys",
+            "byte_order": "little",
+            "cache_line_size": 64,
+            "eventq_index": 0,
+            "exit_on_work_items": false,
+            "init_param": 0,
+            "kvm_vm": null,
+            "m5ops_base": 4294901760,
+            "mem_mode": "atomic",
+            "mem_ranges": [
+                "0:2147483648"
+            ],
+            "memories": [
+                "cltsys.mem_ctrls.dram"
+            ],
+            "mmap_using_noreserve": false,
+            "multi_thread": false,
+            "num_work_ids": 16,
+            "readfile": "",
+            "redirect_paths": [
+                {
+                    "type": "RedirectPath",
+                    "cxx_class": "RedirectPath",
+                    "name": "redirect_paths0",
+                    "path": "cltsys.redirect_paths0",
+                    "app_path": "/proc",
+                    "eventq_index": 0,
+                    "host_paths": [
+                        "m5out/fs/proc"
+                    ]
+                },
+                {
+                    "type": "RedirectPath",
+                    "cxx_class": "RedirectPath",
+                    "name": "redirect_paths1",
+                    "path": "cltsys.redirect_paths1",
+                    "app_path": "/sys",
+                    "eventq_index": 0,
+                    "host_paths": [
+                        "m5out/fs/sys"
+                    ]
+                },
+                {
+                    "type": "RedirectPath",
+                    "cxx_class": "RedirectPath",
+                    "name": "redirect_paths2",
+                    "path": "cltsys.redirect_paths2",
+                    "app_path": "/tmp",
+                    "eventq_index": 0,
+                    "host_paths": [
+                        "m5out/fs/tmp"
+                    ]
+                }
+            ],
+            "shared_backstore": "",
+            "symbolfile": "",
+            "thermal_components": [],
+            "thermal_model": null,
+            "work_begin_ckpt_count": 0,
+            "work_begin_cpu_id_exit": -1,
+            "work_begin_exit_count": 0,
+            "work_cpus_ckpt_count": 0,
+            "work_end_ckpt_count": 0,
+            "work_end_exit_count": 0,
+            "work_item_id": -1,
+            "workload": null,
+            "clk_domain": {
+                "type": "SrcClockDomain",
+                "cxx_class": "SrcClockDomain",
+                "name": "clk_domain",
+                "path": "cltsys.clk_domain",
+                "clock": [
+                    1000
+                ],
+                "domain_id": -1,
+                "eventq_index": 0,
+                "init_perf_level": 0,
+                "voltage_domain": "cltsys.voltage_domain"
+            },
+            "cpu": [
+                {
+                    "type": "AtomicSimpleCPU",
+                    "cxx_class": "AtomicSimpleCPU",
+                    "name": "cpu0",
+                    "path": "cltsys.cpu0",
+                    "branchPred": null,
+                    "checker": null,
+                    "clk_domain": "cltsys.cpu_clk_domain",
+                    "cpu_id": 0,
+                    "do_checkpoint_insts": true,
+                    "do_statistics_insts": true,
+                    "dtb": {
+                        "type": "X86TLB",
+                        "cxx_class": "X86ISA::TLB",
+                        "name": "dtb",
+                        "path": "cltsys.cpu0.dtb",
+                        "eventq_index": 0,
+                        "size": 64,
+                        "system": "cltsys",
+                        "walker": {
+                            "type": "X86PagetableWalker",
+                            "cxx_class": "X86ISA::Walker",
+                            "name": "walker",
+                            "path": "cltsys.cpu0.dtb.walker",
+                            "clk_domain": "cltsys.cpu_clk_domain",
+                            "eventq_index": 0,
+                            "num_squash_per_cycle": 4,
+                            "power_model": [],
+                            "power_state": {
+                                "type": "PowerState",
+                                "cxx_class": "PowerState",
+                                "name": "power_state",
+                                "path": "cltsys.cpu0.dtb.walker.power_state",
+                                "clk_gate_bins": 20,
+                                "clk_gate_max": 1000000000000,
+                                "clk_gate_min": 1000,
+                                "default_state": "UNDEFINED",
+                                "eventq_index": 0,
+                                "leaders": [],
+                                "possible_states": []
+                            },
+                            "system": "cltsys",
+                            "port": {
+                                "role": "GEM5 REQUESTOR",
+                                "peer": "cltsys.membus.cpu_side_ports[4]",
+                                "is_source": "True"
+                            }
+                        }
+                    },
+                    "eventq_index": 0,
+                    "function_trace": false,
+                    "function_trace_start": 0,
+                    "interrupts": [
+                        {
+                            "type": "X86LocalApic",
+                            "cxx_class": "X86ISA::Interrupts",
+                            "name": "interrupts",
+                            "path": "cltsys.cpu0.interrupts",
+                            "clk_domain": {
+                                "type": "DerivedClockDomain",
+                                "cxx_class": "DerivedClockDomain",
+                                "name": "clk_domain",
+                                "path": "cltsys.cpu0.interrupts.clk_domain",
+                                "clk_divider": 16,
+                                "clk_domain": "cltsys.cpu_clk_domain",
+                                "eventq_index": 0
+                            },
+                            "eventq_index": 0,
+                            "int_latency": 1000,
+                            "pio_latency": 100000,
+                            "system": "cltsys",
+                            "int_requestor": {
+                                "role": "GEM5 REQUESTOR",
+                                "peer": "cltsys.membus.cpu_side_ports[5]",
+                                "is_source": "True"
+                            },
+                            "int_responder": {
+                                "role": "GEM5 RESPONDER",
+                                "peer": "cltsys.membus.mem_side_ports[1]",
+                                "is_source": "False"
+                            },
+                            "pio": {
+                                "role": "GEM5 RESPONDER",
+                                "peer": "cltsys.membus.mem_side_ports[0]",
+                                "is_source": "False"
+                            }
+                        }
+                    ],
+                    "isa": [
+                        {
+                            "type": "X86ISA",
+                            "cxx_class": "X86ISA::ISA",
+                            "name": "isa",
+                            "path": "cltsys.cpu0.isa",
+                            "eventq_index": 0
+                        }
+                    ],
+                    "itb": {
+                        "type": "X86TLB",
+                        "cxx_class": "X86ISA::TLB",
+                        "name": "itb",
+                        "path": "cltsys.cpu0.itb",
+                        "eventq_index": 0,
+                        "size": 64,
+                        "system": "cltsys",
+                        "walker": {
+                            "type": "X86PagetableWalker",
+                            "cxx_class": "X86ISA::Walker",
+                            "name": "walker",
+                            "path": "cltsys.cpu0.itb.walker",
+                            "clk_domain": "cltsys.cpu_clk_domain",
+                            "eventq_index": 0,
+                            "num_squash_per_cycle": 4,
+                            "power_model": [],
+                            "power_state": {
+                                "type": "PowerState",
+                                "cxx_class": "PowerState",
+                                "name": "power_state",
+                                "path": "cltsys.cpu0.itb.walker.power_state",
+                                "clk_gate_bins": 20,
+                                "clk_gate_max": 1000000000000,
+                                "clk_gate_min": 1000,
+                                "default_state": "UNDEFINED",
+                                "eventq_index": 0,
+                                "leaders": [],
+                                "possible_states": []
+                            },
+                            "system": "cltsys",
+                            "port": {
+                                "role": "GEM5 REQUESTOR",
+                                "peer": "cltsys.membus.cpu_side_ports[3]",
+                                "is_source": "True"
+                            }
+                        }
+                    },
+                    "max_insts_all_threads": 0,
+                    "max_insts_any_thread": 0,
+                    "numThreads": 1,
+                    "power_gating_on_idle": false,
+                    "power_model": [],
+                    "power_state": {
+                        "type": "PowerState",
+                        "cxx_class": "PowerState",
+                        "name": "power_state",
+                        "path": "cltsys.cpu0.power_state",
+                        "clk_gate_bins": 20,
+                        "clk_gate_max": 1000000000000,
+                        "clk_gate_min": 1000,
+                        "default_state": "UNDEFINED",
+                        "eventq_index": 0,
+                        "leaders": [],
+                        "possible_states": [
+                            "ON",
+                            "CLK_GATED",
+                            "OFF"
+                        ]
+                    },
+                    "progress_interval": 0,
+                    "pwr_gating_latency": 300,
+                    "simpoint_start_insts": [],
+                    "simulate_data_stalls": false,
+                    "simulate_inst_stalls": false,
+                    "socket_id": 0,
+                    "switched_out": false,
+                    "syscallRetryLatency": 200,
+                    "system": "cltsys",
+                    "tracer": {
+                        "type": "ExeTracer",
+                        "cxx_class": "Trace::ExeTracer",
+                        "name": "tracer",
+                        "path": "cltsys.cpu0.tracer",
+                        "eventq_index": 0
+                    },
+                    "wait_for_remote_gdb": false,
+                    "width": 1,
+                    "workload": [
+                        {
+                            "type": "Process",
+                            "cxx_class": "Process",
+                            "name": "workload",
+                            "path": "cltsys.cpu0.workload",
+                            "cmd": [
+                                "tests/test-progs/hangu-rnic-isolated/bin/client",
+                                "-s",
+                                "10",
+                                "-l",
+                                "11",
+                                "-t",
+                                "1",
+                                "-m",
+                                "0",
+                                "-c",
+                                "0"
+                            ],
+                            "cwd": "/home/yunkunliao/csRNA_merge",
+                            "drivers": [
+                                {
+                                    "type": "HanGuDriver",
+                                    "cxx_class": "HanGuDriver",
+                                    "name": "drivers",
+                                    "path": "cltsys.cpu0.workload.drivers",
+                                    "device": "cltsys.platform.rdma_nic",
+                                    "eventq_index": 0,
+                                    "filename": "hangu_rnic0"
+                                }
+                            ],
+                            "egid": 100,
+                            "env": [],
+                            "errout": "cerr",
+                            "euid": 100,
+                            "eventq_index": 0,
+                            "executable": "tests/test-progs/hangu-rnic-isolated/bin/client",
+                            "gid": 100,
+                            "input": "cin",
+                            "kvmInSE": false,
+                            "maxStackSize": 67108864,
+                            "output": "cout",
+                            "pgid": 100,
+                            "pid": 100,
+                            "ppid": 0,
+                            "release": "5.1.0",
+                            "simpoint": 0,
+                            "system": "cltsys",
+                            "uid": 100,
+                            "useArchPT": false
+                        }
+                    ],
+                    "dcache_port": {
+                        "role": "GEM5 REQUESTOR",
+                        "peer": "cltsys.membus.cpu_side_ports[2]",
+                        "is_source": "True"
+                    },
+                    "icache_port": {
+                        "role": "GEM5 REQUESTOR",
+                        "peer": "cltsys.membus.cpu_side_ports[1]",
+                        "is_source": "True"
+                    }
+                },
+                {
+                    "type": "AtomicSimpleCPU",
+                    "cxx_class": "AtomicSimpleCPU",
+                    "name": "cpu1",
+                    "path": "cltsys.cpu1",
+                    "branchPred": null,
+                    "checker": null,
+                    "clk_domain": "cltsys.cpu_clk_domain",
+                    "cpu_id": 1,
+                    "do_checkpoint_insts": true,
+                    "do_statistics_insts": true,
+                    "dtb": {
+                        "type": "X86TLB",
+                        "cxx_class": "X86ISA::TLB",
+                        "name": "dtb",
+                        "path": "cltsys.cpu1.dtb",
+                        "eventq_index": 0,
+                        "size": 64,
+                        "system": "cltsys",
+                        "walker": {
+                            "type": "X86PagetableWalker",
+                            "cxx_class": "X86ISA::Walker",
+                            "name": "walker",
+                            "path": "cltsys.cpu1.dtb.walker",
+                            "clk_domain": "cltsys.cpu_clk_domain",
+                            "eventq_index": 0,
+                            "num_squash_per_cycle": 4,
+                            "power_model": [],
+                            "power_state": {
+                                "type": "PowerState",
+                                "cxx_class": "PowerState",
+                                "name": "power_state",
+                                "path": "cltsys.cpu1.dtb.walker.power_state",
+                                "clk_gate_bins": 20,
+                                "clk_gate_max": 1000000000000,
+                                "clk_gate_min": 1000,
+                                "default_state": "UNDEFINED",
+                                "eventq_index": 0,
+                                "leaders": [],
+                                "possible_states": []
+                            },
+                            "system": "cltsys",
+                            "port": {
+                                "role": "GEM5 REQUESTOR",
+                                "peer": "cltsys.membus.cpu_side_ports[9]",
+                                "is_source": "True"
+                            }
+                        }
+                    },
+                    "eventq_index": 0,
+                    "function_trace": false,
+                    "function_trace_start": 0,
+                    "interrupts": [
+                        {
+                            "type": "X86LocalApic",
+                            "cxx_class": "X86ISA::Interrupts",
+                            "name": "interrupts",
+                            "path": "cltsys.cpu1.interrupts",
+                            "clk_domain": {
+                                "type": "DerivedClockDomain",
+                                "cxx_class": "DerivedClockDomain",
+                                "name": "clk_domain",
+                                "path": "cltsys.cpu1.interrupts.clk_domain",
+                                "clk_divider": 16,
+                                "clk_domain": "cltsys.cpu_clk_domain",
+                                "eventq_index": 0
+                            },
+                            "eventq_index": 0,
+                            "int_latency": 1000,
+                            "pio_latency": 100000,
+                            "system": "cltsys",
+                            "int_requestor": {
+                                "role": "GEM5 REQUESTOR",
+                                "peer": "cltsys.membus.cpu_side_ports[10]",
+                                "is_source": "True"
+                            },
+                            "int_responder": {
+                                "role": "GEM5 RESPONDER",
+                                "peer": "cltsys.membus.mem_side_ports[3]",
+                                "is_source": "False"
+                            },
+                            "pio": {
+                                "role": "GEM5 RESPONDER",
+                                "peer": "cltsys.membus.mem_side_ports[2]",
+                                "is_source": "False"
+                            }
+                        }
+                    ],
+                    "isa": [
+                        {
+                            "type": "X86ISA",
+                            "cxx_class": "X86ISA::ISA",
+                            "name": "isa",
+                            "path": "cltsys.cpu1.isa",
+                            "eventq_index": 0
+                        }
+                    ],
+                    "itb": {
+                        "type": "X86TLB",
+                        "cxx_class": "X86ISA::TLB",
+                        "name": "itb",
+                        "path": "cltsys.cpu1.itb",
+                        "eventq_index": 0,
+                        "size": 64,
+                        "system": "cltsys",
+                        "walker": {
+                            "type": "X86PagetableWalker",
+                            "cxx_class": "X86ISA::Walker",
+                            "name": "walker",
+                            "path": "cltsys.cpu1.itb.walker",
+                            "clk_domain": "cltsys.cpu_clk_domain",
+                            "eventq_index": 0,
+                            "num_squash_per_cycle": 4,
+                            "power_model": [],
+                            "power_state": {
+                                "type": "PowerState",
+                                "cxx_class": "PowerState",
+                                "name": "power_state",
+                                "path": "cltsys.cpu1.itb.walker.power_state",
+                                "clk_gate_bins": 20,
+                                "clk_gate_max": 1000000000000,
+                                "clk_gate_min": 1000,
+                                "default_state": "UNDEFINED",
+                                "eventq_index": 0,
+                                "leaders": [],
+                                "possible_states": []
+                            },
+                            "system": "cltsys",
+                            "port": {
+                                "role": "GEM5 REQUESTOR",
+                                "peer": "cltsys.membus.cpu_side_ports[8]",
+                                "is_source": "True"
+                            }
+                        }
+                    },
+                    "max_insts_all_threads": 0,
+                    "max_insts_any_thread": 0,
+                    "numThreads": 1,
+                    "power_gating_on_idle": false,
+                    "power_model": [],
+                    "power_state": {
+                        "type": "PowerState",
+                        "cxx_class": "PowerState",
+                        "name": "power_state",
+                        "path": "cltsys.cpu1.power_state",
+                        "clk_gate_bins": 20,
+                        "clk_gate_max": 1000000000000,
+                        "clk_gate_min": 1000,
+                        "default_state": "UNDEFINED",
+                        "eventq_index": 0,
+                        "leaders": [],
+                        "possible_states": [
+                            "ON",
+                            "CLK_GATED",
+                            "OFF"
+                        ]
+                    },
+                    "progress_interval": 0,
+                    "pwr_gating_latency": 300,
+                    "simpoint_start_insts": [],
+                    "simulate_data_stalls": false,
+                    "simulate_inst_stalls": false,
+                    "socket_id": 1,
+                    "switched_out": false,
+                    "syscallRetryLatency": 200,
+                    "system": "cltsys",
+                    "tracer": {
+                        "type": "ExeTracer",
+                        "cxx_class": "Trace::ExeTracer",
+                        "name": "tracer",
+                        "path": "cltsys.cpu1.tracer",
+                        "eventq_index": 0
+                    },
+                    "wait_for_remote_gdb": false,
+                    "width": 1,
+                    "workload": [
+                        {
+                            "type": "Process",
+                            "cxx_class": "Process",
+                            "name": "workload",
+                            "path": "cltsys.cpu1.workload",
+                            "cmd": [
+                                "tests/test-progs/hangu-rnic-isolated/bin/client",
+                                "-s",
+                                "10",
+                                "-l",
+                                "11",
+                                "-t",
+                                "1",
+                                "-m",
+                                "0",
+                                "-c",
+                                "1"
+                            ],
+                            "cwd": "/home/yunkunliao/csRNA_merge",
+                            "drivers": [
+                                {
+                                    "type": "HanGuDriver",
+                                    "cxx_class": "HanGuDriver",
+                                    "name": "drivers",
+                                    "path": "cltsys.cpu1.workload.drivers",
+                                    "device": "cltsys.platform.rdma_nic",
+                                    "eventq_index": 0,
+                                    "filename": "hangu_rnic1"
+                                }
+                            ],
+                            "egid": 100,
+                            "env": [],
+                            "errout": "cerr",
+                            "euid": 100,
+                            "eventq_index": 0,
+                            "executable": "tests/test-progs/hangu-rnic-isolated/bin/client",
+                            "gid": 100,
+                            "input": "cin",
+                            "kvmInSE": false,
+                            "maxStackSize": 67108864,
+                            "output": "cout",
+                            "pgid": 100,
+                            "pid": 101,
+                            "ppid": 0,
+                            "release": "5.1.0",
+                            "simpoint": 0,
+                            "system": "cltsys",
+                            "uid": 100,
+                            "useArchPT": false
+                        }
+                    ],
+                    "dcache_port": {
+                        "role": "GEM5 REQUESTOR",
+                        "peer": "cltsys.membus.cpu_side_ports[7]",
+                        "is_source": "True"
+                    },
+                    "icache_port": {
+                        "role": "GEM5 REQUESTOR",
+                        "peer": "cltsys.membus.cpu_side_ports[6]",
+                        "is_source": "True"
+                    }
+                }
+            ],
+            "cpu_clk_domain": {
+                "type": "SrcClockDomain",
+                "cxx_class": "SrcClockDomain",
+                "name": "cpu_clk_domain",
+                "path": "cltsys.cpu_clk_domain",
+                "clock": [
+                    500
+                ],
+                "domain_id": -1,
+                "eventq_index": 0,
+                "init_perf_level": 0,
+                "voltage_domain": "cltsys.cpu_voltage_domain"
+            },
+            "cpu_voltage_domain": {
+                "type": "VoltageDomain",
+                "cxx_class": "VoltageDomain",
+                "name": "cpu_voltage_domain",
+                "path": "cltsys.cpu_voltage_domain",
+                "eventq_index": 0,
+                "voltage": [
+                    1.0
+                ]
+            },
+            "dmabridge": {
+                "type": "Bridge",
+                "cxx_class": "Bridge",
+                "name": "dmabridge",
+                "path": "cltsys.dmabridge",
+                "clk_domain": "cltsys.clk_domain",
+                "delay": 250000,
+                "eventq_index": 0,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "cltsys.dmabridge.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "ranges": [
+                    "0:2147483648"
+                ],
+                "req_size": 16,
+                "resp_size": 16,
+                "cpu_side_port": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": "cltsys.iobus.mem_side_ports[0]",
+                    "is_source": "False"
+                },
+                "mem_side_port": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "cltsys.membus.cpu_side_ports[11]",
+                    "is_source": "True"
+                }
+            },
+            "dvfs_handler": {
+                "type": "DVFSHandler",
+                "cxx_class": "DVFSHandler",
+                "name": "dvfs_handler",
+                "path": "cltsys.dvfs_handler",
+                "domains": [],
+                "enable": false,
+                "eventq_index": 0,
+                "sys_clk_domain": "cltsys.clk_domain",
+                "transition_latency": 100000000
+            },
+            "intrctrl": {
+                "type": "IntrControl",
+                "cxx_class": "IntrControl",
+                "name": "intrctrl",
+                "path": "cltsys.intrctrl",
+                "eventq_index": 0,
+                "sys": "cltsys"
+            },
+            "iobridge": {
+                "type": "Bridge",
+                "cxx_class": "Bridge",
+                "name": "iobridge",
+                "path": "cltsys.iobridge",
+                "clk_domain": "cltsys.clk_domain",
+                "delay": 250000,
+                "eventq_index": 0,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "cltsys.iobridge.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "ranges": [
+                    "3221225472:4294901760",
+                    "9223372036854775808:11529215046068469759",
+                    "13835058055282163712:18446744073709551615"
+                ],
+                "req_size": 16,
+                "resp_size": 16,
+                "cpu_side_port": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": "cltsys.membus.mem_side_ports[5]",
+                    "is_source": "False"
+                },
+                "mem_side_port": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "cltsys.iobus.cpu_side_ports[0]",
+                    "is_source": "True"
+                }
+            },
+            "iobus": {
+                "type": "NoncoherentXBar",
+                "cxx_class": "NoncoherentXBar",
+                "name": "iobus",
+                "path": "cltsys.iobus",
+                "clk_domain": "cltsys.clk_domain",
+                "eventq_index": 0,
+                "forward_latency": 1,
+                "frontend_latency": 2,
+                "header_latency": 1,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "cltsys.iobus.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "response_latency": 2,
+                "use_default_range": false,
+                "width": 16,
+                "cpu_side_ports": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": [
+                        "cltsys.iobridge.mem_side_port",
+                        "cltsys.platform.rdma_nic.dma"
+                    ],
+                    "is_source": "False"
+                },
+                "default": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "cltsys.platform.pci_host.pio",
+                    "is_source": "True"
+                },
+                "mem_side_ports": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": [
+                        "cltsys.dmabridge.cpu_side_port",
+                        "cltsys.platform.rdma_nic.pio"
+                    ],
+                    "is_source": "True"
+                }
+            },
+            "mem_ctrls": [
+                {
+                    "type": "MemCtrl",
+                    "cxx_class": "MemCtrl",
+                    "name": "mem_ctrls",
+                    "path": "cltsys.mem_ctrls",
+                    "clk_domain": "cltsys.clk_domain",
+                    "command_window": 10000,
+                    "dram": {
+                        "type": "DRAMInterface",
+                        "cxx_class": "DRAMInterface",
+                        "name": "dram",
+                        "path": "cltsys.mem_ctrls.dram",
+                        "IDD0": 0.055,
+                        "IDD02": 0.0,
+                        "IDD2N": 0.032,
+                        "IDD2N2": 0.0,
+                        "IDD2P0": 0.0,
+                        "IDD2P02": 0.0,
+                        "IDD2P1": 0.032,
+                        "IDD2P12": 0.0,
+                        "IDD3N": 0.038,
+                        "IDD3N2": 0.0,
+                        "IDD3P0": 0.0,
+                        "IDD3P02": 0.0,
+                        "IDD3P1": 0.038,
+                        "IDD3P12": 0.0,
+                        "IDD4R": 0.157,
+                        "IDD4R2": 0.0,
+                        "IDD4W": 0.125,
+                        "IDD4W2": 0.0,
+                        "IDD5": 0.23500000000000001,
+                        "IDD52": 0.0,
+                        "IDD6": 0.02,
+                        "IDD62": 0.0,
+                        "VDD": 1.5,
+                        "VDD2": 0.0,
+                        "activation_limit": 4,
+                        "addr_mapping": "RoRaBaCoCh",
+                        "bank_groups_per_rank": 0,
+                        "banks_per_rank": 8,
+                        "beats_per_clock": 2,
+                        "burst_length": 8,
+                        "clk_domain": "cltsys.clk_domain",
+                        "conf_table_reported": true,
+                        "data_clock_sync": false,
+                        "device_bus_width": 8,
+                        "device_rowbuffer_size": 1024,
+                        "device_size": 536870912,
+                        "devices_per_rank": 8,
+                        "dll": true,
+                        "enable_dram_powerdown": false,
+                        "eventq_index": 0,
+                        "image_file": "",
+                        "in_addr_map": true,
+                        "kvm_map": true,
+                        "max_accesses_per_row": 16,
+                        "null": false,
+                        "page_policy": "open_adaptive",
+                        "power_model": [],
+                        "power_state": {
+                            "type": "PowerState",
+                            "cxx_class": "PowerState",
+                            "name": "power_state",
+                            "path": "cltsys.mem_ctrls.dram.power_state",
+                            "clk_gate_bins": 20,
+                            "clk_gate_max": 1000000000000,
+                            "clk_gate_min": 1000,
+                            "default_state": "UNDEFINED",
+                            "eventq_index": 0,
+                            "leaders": [],
+                            "possible_states": []
+                        },
+                        "range": "0:2147483648",
+                        "ranks_per_channel": 2,
+                        "read_buffer_size": 32,
+                        "tAAD": 1250,
+                        "tBURST": 5000,
+                        "tBURST_MAX": 5000,
+                        "tBURST_MIN": 5000,
+                        "tCCD_L": 0,
+                        "tCCD_L_WR": 0,
+                        "tCK": 1250,
+                        "tCL": 13750,
+                        "tCS": 2500,
+                        "tPPD": 0,
+                        "tRAS": 35000,
+                        "tRCD": 13750,
+                        "tREFI": 7800000,
+                        "tRFC": 260000,
+                        "tRP": 13750,
+                        "tRRD": 6000,
+                        "tRRD_L": 0,
+                        "tRTP": 7500,
+                        "tRTW": 2500,
+                        "tWR": 15000,
+                        "tWTR": 7500,
+                        "tWTR_L": 7500,
+                        "tXAW": 30000,
+                        "tXP": 6000,
+                        "tXPDLL": 0,
+                        "tXS": 270000,
+                        "tXSDLL": 0,
+                        "two_cycle_activate": false,
+                        "write_buffer_size": 64
+                    },
+                    "eventq_index": 0,
+                    "mem_sched_policy": "frfcfs",
+                    "min_writes_per_switch": 16,
+                    "nvm": null,
+                    "power_model": [],
+                    "power_state": {
+                        "type": "PowerState",
+                        "cxx_class": "PowerState",
+                        "name": "power_state",
+                        "path": "cltsys.mem_ctrls.power_state",
+                        "clk_gate_bins": 20,
+                        "clk_gate_max": 1000000000000,
+                        "clk_gate_min": 1000,
+                        "default_state": "UNDEFINED",
+                        "eventq_index": 0,
+                        "leaders": [],
+                        "possible_states": []
+                    },
+                    "qos_policy": null,
+                    "qos_priorities": 1,
+                    "qos_priority_escalation": false,
+                    "qos_q_policy": "fifo",
+                    "qos_requestors": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "qos_syncro_scheduler": false,
+                    "qos_turnaround_policy": null,
+                    "static_backend_latency": 10000,
+                    "static_frontend_latency": 10000,
+                    "system": "cltsys",
+                    "write_high_thresh_perc": 85,
+                    "write_low_thresh_perc": 50,
+                    "port": {
+                        "role": "GEM5 RESPONDER",
+                        "peer": "cltsys.membus.mem_side_ports[4]",
+                        "is_source": "False"
+                    }
+                }
+            ],
+            "membus": {
+                "type": "CoherentXBar",
+                "cxx_class": "CoherentXBar",
+                "name": "membus",
+                "path": "cltsys.membus",
+                "clk_domain": "cltsys.clk_domain",
+                "eventq_index": 0,
+                "forward_latency": 4,
+                "frontend_latency": 3,
+                "header_latency": 1,
+                "max_outstanding_snoops": 512,
+                "max_routing_table_size": 512,
+                "point_of_coherency": true,
+                "point_of_unification": true,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "cltsys.membus.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "response_latency": 2,
+                "snoop_filter": {
+                    "type": "SnoopFilter",
+                    "cxx_class": "SnoopFilter",
+                    "name": "snoop_filter",
+                    "path": "cltsys.membus.snoop_filter",
+                    "eventq_index": 0,
+                    "lookup_latency": 1,
+                    "max_capacity": 8388608,
+                    "system": "cltsys"
+                },
+                "snoop_response_latency": 4,
+                "system": "cltsys",
+                "use_default_range": false,
+                "width": 16,
+                "cpu_side_ports": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": [
+                        "cltsys.system_port",
+                        "cltsys.cpu0.icache_port",
+                        "cltsys.cpu0.dcache_port",
+                        "cltsys.cpu0.itb.walker.port",
+                        "cltsys.cpu0.dtb.walker.port",
+                        "cltsys.cpu0.interrupts.int_requestor",
+                        "cltsys.cpu1.icache_port",
+                        "cltsys.cpu1.dcache_port",
+                        "cltsys.cpu1.itb.walker.port",
+                        "cltsys.cpu1.dtb.walker.port",
+                        "cltsys.cpu1.interrupts.int_requestor",
+                        "cltsys.dmabridge.mem_side_port"
+                    ],
+                    "is_source": "False"
+                },
+                "mem_side_ports": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": [
+                        "cltsys.cpu0.interrupts.pio",
+                        "cltsys.cpu0.interrupts.int_responder",
+                        "cltsys.cpu1.interrupts.pio",
+                        "cltsys.cpu1.interrupts.int_responder",
+                        "cltsys.mem_ctrls.port",
+                        "cltsys.iobridge.cpu_side_port"
+                    ],
+                    "is_source": "True"
+                }
+            },
+            "platform": {
+                "type": "RnicPlatform",
+                "cxx_class": "RnicPlatform",
+                "name": "platform",
+                "path": "cltsys.platform",
+                "eventq_index": 0,
+                "intrctrl": "cltsys.intrctrl",
+                "system": "cltsys",
+                "pci_host": {
+                    "type": "GenericPciHost",
+                    "cxx_class": "GenericPciHost",
+                    "name": "pci_host",
+                    "path": "cltsys.platform.pci_host",
+                    "clk_domain": "cltsys.clk_domain",
+                    "conf_base": 13835058055282163712,
+                    "conf_device_bits": 8,
+                    "conf_size": 16777216,
+                    "eventq_index": 0,
+                    "pci_dma_base": 0,
+                    "pci_mem_base": 0,
+                    "pci_pio_base": 9223372036854775808,
+                    "platform": "cltsys.platform",
+                    "power_model": [],
+                    "power_state": {
+                        "type": "PowerState",
+                        "cxx_class": "PowerState",
+                        "name": "power_state",
+                        "path": "cltsys.platform.pci_host.power_state",
+                        "clk_gate_bins": 20,
+                        "clk_gate_max": 1000000000000,
+                        "clk_gate_min": 1000,
+                        "default_state": "UNDEFINED",
+                        "eventq_index": 0,
+                        "leaders": [],
+                        "possible_states": []
+                    },
+                    "system": "cltsys",
+                    "pio": {
+                        "role": "GEM5 RESPONDER",
+                        "peer": "cltsys.iobus.default",
+                        "is_source": "False"
+                    }
+                },
+                "rdma_nic": {
+                    "type": "HanGuRnic",
+                    "cxx_class": "HanGuRnic",
+                    "name": "rdma_nic",
+                    "path": "cltsys.platform.rdma_nic",
+                    "BAR0": 0,
+                    "BAR0LegacyIO": false,
+                    "BAR0Size": 1024,
+                    "BAR1": 0,
+                    "BAR1LegacyIO": false,
+                    "BAR1Size": 0,
+                    "BAR2": 0,
+                    "BAR2LegacyIO": false,
+                    "BAR2Size": 0,
+                    "BAR3": 0,
+                    "BAR3LegacyIO": false,
+                    "BAR3Size": 0,
+                    "BAR4": 0,
+                    "BAR4LegacyIO": false,
+                    "BAR4Size": 0,
+                    "BAR5": 0,
+                    "BAR5LegacyIO": false,
+                    "BAR5Size": 0,
+                    "BIST": 0,
+                    "CacheLineSize": 0,
+                    "CapabilityPtr": 0,
+                    "CardbusCIS": 0,
+                    "ClassCode": 2,
+                    "Command": 0,
+                    "DeviceID": 4213,
+                    "ExpansionROM": 0,
+                    "HeaderType": 0,
+                    "InterruptLine": 30,
+                    "InterruptPin": 1,
+                    "LatencyTimer": 0,
+                    "LegacyIOBase": 0,
+                    "MSICAPBaseOffset": 0,
+                    "MSICAPCapId": 0,
+                    "MSICAPMaskBits": 0,
+                    "MSICAPMsgAddr": 0,
+                    "MSICAPMsgCtrl": 0,
+                    "MSICAPMsgData": 0,
+                    "MSICAPMsgUpperAddr": 0,
+                    "MSICAPNextCapability": 0,
+                    "MSICAPPendingBits": 0,
+                    "MSIXCAPBaseOffset": 0,
+                    "MSIXCAPCapId": 0,
+                    "MSIXCAPNextCapability": 0,
+                    "MSIXMsgCtrl": 0,
+                    "MSIXPbaOffset": 0,
+                    "MSIXTableOffset": 0,
+                    "MaximumLatency": 0,
+                    "MinimumGrant": 255,
+                    "PMCAPBaseOffset": 0,
+                    "PMCAPCapId": 0,
+                    "PMCAPCapabilities": 0,
+                    "PMCAPCtrlStatus": 0,
+                    "PMCAPNextCapability": 0,
+                    "PXCAPBaseOffset": 0,
+                    "PXCAPCapId": 0,
+                    "PXCAPCapabilities": 0,
+                    "PXCAPDevCap2": 0,
+                    "PXCAPDevCapabilities": 0,
+                    "PXCAPDevCtrl": 0,
+                    "PXCAPDevCtrl2": 0,
+                    "PXCAPDevStatus": 0,
+                    "PXCAPLinkCap": 0,
+                    "PXCAPLinkCtrl": 0,
+                    "PXCAPLinkStatus": 0,
+                    "PXCAPNextCapability": 0,
+                    "ProgIF": 0,
+                    "Revision": 0,
+                    "Status": 0,
+                    "SubClassCode": 0,
+                    "SubsystemID": 4104,
+                    "SubsystemVendorID": 32902,
+                    "VendorID": 32902,
+                    "clk_domain": "cltsys.clk_domain",
+                    "config_latency": 20000,
+                    "cpu_num": 2,
+                    "cqc_cache_num": 2000,
+                    "dma_read_delay": 500000,
+                    "dma_write_delay": 250000,
+                    "ether_speed": "80.000000",
+                    "eventq_index": 0,
+                    "host": "cltsys.platform.pci_host",
+                    "link_delay": 1000000,
+                    "mac_addr": 11,
+                    "mpt_cache_num": 40000,
+                    "mtt_cache_num": 50000,
+                    "pci_bus": 0,
+                    "pci_dev": 0,
+                    "pci_func": 0,
+                    "pci_speed": "63.000000",
+                    "pio_latency": 30000,
+                    "power_model": [],
+                    "power_state": {
+                        "type": "PowerState",
+                        "cxx_class": "PowerState",
+                        "name": "power_state",
+                        "path": "cltsys.platform.rdma_nic.power_state",
+                        "clk_gate_bins": 20,
+                        "clk_gate_max": 1000000000000,
+                        "clk_gate_min": 1000,
+                        "default_state": "UNDEFINED",
+                        "eventq_index": 0,
+                        "leaders": [],
+                        "possible_states": []
+                    },
+                    "qpc_cache_cap": 300,
+                    "reorder_cap": 64,
+                    "sid": 0,
+                    "ssid": 0,
+                    "system": "cltsys",
+                    "dma": {
+                        "role": "GEM5 REQUESTOR",
+                        "peer": "cltsys.iobus.cpu_side_ports[1]",
+                        "is_source": "True"
+                    },
+                    "interface": {
+                        "role": "ETHERNET",
+                        "peer": "etherswitch.interface[1]",
+                        "is_source": "False"
+                    },
+                    "pio": {
+                        "role": "GEM5 RESPONDER",
+                        "peer": "cltsys.iobus.mem_side_ports[1]",
+                        "is_source": "False"
+                    }
+                }
+            },
+            "voltage_domain": {
+                "type": "VoltageDomain",
+                "cxx_class": "VoltageDomain",
+                "name": "voltage_domain",
+                "path": "cltsys.voltage_domain",
+                "eventq_index": 0,
+                "voltage": [
+                    1.0
+                ]
+            },
+            "system_port": {
+                "role": "GEM5 REQUESTOR",
+                "peer": "cltsys.membus.cpu_side_ports[0]",
+                "is_source": "True"
+            }
+        }
+    ],
+    "etherswitch": {
+        "type": "EtherSwitch",
+        "cxx_class": "EtherSwitch",
+        "name": "etherswitch",
+        "path": "etherswitch",
+        "delay": 0,
+        "delay_var": 0,
+        "dump": null,
+        "eventq_index": 0,
+        "fabric_speed": "80.000000",
+        "output_buffer_size": 1048576,
+        "time_to_live": 100000000000000,
+        "interface": {
+            "role": "ETHERNET",
+            "peer": [
+                "svrsys.platform.rdma_nic.interface",
+                "cltsys.platform.rdma_nic.interface"
+            ],
+            "is_source": "False"
+        }
+    },
+    "svrsys": {
+        "type": "System",
+        "cxx_class": "System",
+        "name": "svrsys",
+        "path": "svrsys",
+        "byte_order": "little",
+        "cache_line_size": 64,
+        "eventq_index": 0,
+        "exit_on_work_items": false,
+        "init_param": 0,
+        "kvm_vm": null,
+        "m5ops_base": 4294901760,
+        "mem_mode": "atomic",
+        "mem_ranges": [
+            "0:2147483648"
+        ],
+        "memories": [
+            "svrsys.mem_ctrls.dram"
+        ],
+        "mmap_using_noreserve": false,
+        "multi_thread": false,
+        "num_work_ids": 16,
+        "readfile": "",
+        "redirect_paths": [
+            {
+                "type": "RedirectPath",
+                "cxx_class": "RedirectPath",
+                "name": "redirect_paths0",
+                "path": "svrsys.redirect_paths0",
+                "app_path": "/proc",
+                "eventq_index": 0,
+                "host_paths": [
+                    "m5out/fs/proc"
+                ]
+            },
+            {
+                "type": "RedirectPath",
+                "cxx_class": "RedirectPath",
+                "name": "redirect_paths1",
+                "path": "svrsys.redirect_paths1",
+                "app_path": "/sys",
+                "eventq_index": 0,
+                "host_paths": [
+                    "m5out/fs/sys"
+                ]
+            },
+            {
+                "type": "RedirectPath",
+                "cxx_class": "RedirectPath",
+                "name": "redirect_paths2",
+                "path": "svrsys.redirect_paths2",
+                "app_path": "/tmp",
+                "eventq_index": 0,
+                "host_paths": [
+                    "m5out/fs/tmp"
+                ]
+            }
+        ],
+        "shared_backstore": "",
+        "symbolfile": "",
+        "thermal_components": [],
+        "thermal_model": null,
+        "work_begin_ckpt_count": 0,
+        "work_begin_cpu_id_exit": -1,
+        "work_begin_exit_count": 0,
+        "work_cpus_ckpt_count": 0,
+        "work_end_ckpt_count": 0,
+        "work_end_exit_count": 0,
+        "work_item_id": -1,
+        "workload": null,
+        "clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "clk_domain",
+            "path": "svrsys.clk_domain",
+            "clock": [
+                1000
+            ],
+            "domain_id": -1,
+            "eventq_index": 0,
+            "init_perf_level": 0,
+            "voltage_domain": "svrsys.voltage_domain"
+        },
+        "cpu": [
+            {
+                "type": "AtomicSimpleCPU",
+                "cxx_class": "AtomicSimpleCPU",
+                "name": "cpu0",
+                "path": "svrsys.cpu0",
+                "branchPred": null,
+                "checker": null,
+                "clk_domain": "svrsys.cpu_clk_domain",
+                "cpu_id": 0,
+                "do_checkpoint_insts": true,
+                "do_statistics_insts": true,
+                "dtb": {
+                    "type": "X86TLB",
+                    "cxx_class": "X86ISA::TLB",
+                    "name": "dtb",
+                    "path": "svrsys.cpu0.dtb",
+                    "eventq_index": 0,
+                    "size": 64,
+                    "system": "svrsys",
+                    "walker": {
+                        "type": "X86PagetableWalker",
+                        "cxx_class": "X86ISA::Walker",
+                        "name": "walker",
+                        "path": "svrsys.cpu0.dtb.walker",
+                        "clk_domain": "svrsys.cpu_clk_domain",
+                        "eventq_index": 0,
+                        "num_squash_per_cycle": 4,
+                        "power_model": [],
+                        "power_state": {
+                            "type": "PowerState",
+                            "cxx_class": "PowerState",
+                            "name": "power_state",
+                            "path": "svrsys.cpu0.dtb.walker.power_state",
+                            "clk_gate_bins": 20,
+                            "clk_gate_max": 1000000000000,
+                            "clk_gate_min": 1000,
+                            "default_state": "UNDEFINED",
+                            "eventq_index": 0,
+                            "leaders": [],
+                            "possible_states": []
+                        },
+                        "system": "svrsys",
+                        "port": {
+                            "role": "GEM5 REQUESTOR",
+                            "peer": "svrsys.membus.cpu_side_ports[4]",
+                            "is_source": "True"
+                        }
+                    }
+                },
+                "eventq_index": 0,
+                "function_trace": false,
+                "function_trace_start": 0,
+                "interrupts": [
+                    {
+                        "type": "X86LocalApic",
+                        "cxx_class": "X86ISA::Interrupts",
+                        "name": "interrupts",
+                        "path": "svrsys.cpu0.interrupts",
+                        "clk_domain": {
+                            "type": "DerivedClockDomain",
+                            "cxx_class": "DerivedClockDomain",
+                            "name": "clk_domain",
+                            "path": "svrsys.cpu0.interrupts.clk_domain",
+                            "clk_divider": 16,
+                            "clk_domain": "svrsys.cpu_clk_domain",
+                            "eventq_index": 0
+                        },
+                        "eventq_index": 0,
+                        "int_latency": 1000,
+                        "pio_latency": 100000,
+                        "system": "svrsys",
+                        "int_requestor": {
+                            "role": "GEM5 REQUESTOR",
+                            "peer": "svrsys.membus.cpu_side_ports[5]",
+                            "is_source": "True"
+                        },
+                        "int_responder": {
+                            "role": "GEM5 RESPONDER",
+                            "peer": "svrsys.membus.mem_side_ports[1]",
+                            "is_source": "False"
+                        },
+                        "pio": {
+                            "role": "GEM5 RESPONDER",
+                            "peer": "svrsys.membus.mem_side_ports[0]",
+                            "is_source": "False"
+                        }
+                    }
+                ],
+                "isa": [
+                    {
+                        "type": "X86ISA",
+                        "cxx_class": "X86ISA::ISA",
+                        "name": "isa",
+                        "path": "svrsys.cpu0.isa",
+                        "eventq_index": 0
+                    }
+                ],
+                "itb": {
+                    "type": "X86TLB",
+                    "cxx_class": "X86ISA::TLB",
+                    "name": "itb",
+                    "path": "svrsys.cpu0.itb",
+                    "eventq_index": 0,
+                    "size": 64,
+                    "system": "svrsys",
+                    "walker": {
+                        "type": "X86PagetableWalker",
+                        "cxx_class": "X86ISA::Walker",
+                        "name": "walker",
+                        "path": "svrsys.cpu0.itb.walker",
+                        "clk_domain": "svrsys.cpu_clk_domain",
+                        "eventq_index": 0,
+                        "num_squash_per_cycle": 4,
+                        "power_model": [],
+                        "power_state": {
+                            "type": "PowerState",
+                            "cxx_class": "PowerState",
+                            "name": "power_state",
+                            "path": "svrsys.cpu0.itb.walker.power_state",
+                            "clk_gate_bins": 20,
+                            "clk_gate_max": 1000000000000,
+                            "clk_gate_min": 1000,
+                            "default_state": "UNDEFINED",
+                            "eventq_index": 0,
+                            "leaders": [],
+                            "possible_states": []
+                        },
+                        "system": "svrsys",
+                        "port": {
+                            "role": "GEM5 REQUESTOR",
+                            "peer": "svrsys.membus.cpu_side_ports[3]",
+                            "is_source": "True"
+                        }
+                    }
+                },
+                "max_insts_all_threads": 0,
+                "max_insts_any_thread": 0,
+                "numThreads": 1,
+                "power_gating_on_idle": false,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "svrsys.cpu0.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": [
+                        "ON",
+                        "CLK_GATED",
+                        "OFF"
+                    ]
+                },
+                "progress_interval": 0,
+                "pwr_gating_latency": 300,
+                "simpoint_start_insts": [],
+                "simulate_data_stalls": false,
+                "simulate_inst_stalls": false,
+                "socket_id": 0,
+                "switched_out": false,
+                "syscallRetryLatency": 200,
+                "system": "svrsys",
+                "tracer": {
+                    "type": "ExeTracer",
+                    "cxx_class": "Trace::ExeTracer",
+                    "name": "tracer",
+                    "path": "svrsys.cpu0.tracer",
+                    "eventq_index": 0
+                },
+                "wait_for_remote_gdb": false,
+                "width": 1,
+                "workload": [
+                    {
+                        "type": "Process",
+                        "cxx_class": "Process",
+                        "name": "workload",
+                        "path": "svrsys.cpu0.workload",
+                        "cmd": [
+                            "tests/test-progs/hangu-rnic-isolated/bin/server",
+                            "-s",
+                            "10",
+                            "-t",
+                            "1",
+                            "-m",
+                            "0",
+                            "-c",
+                            "0"
+                        ],
+                        "cwd": "/home/yunkunliao/csRNA_merge",
+                        "drivers": [
+                            {
+                                "type": "HanGuDriver",
+                                "cxx_class": "HanGuDriver",
+                                "name": "drivers",
+                                "path": "svrsys.cpu0.workload.drivers",
+                                "device": "svrsys.platform.rdma_nic",
+                                "eventq_index": 0,
+                                "filename": "hangu_rnic0"
+                            }
+                        ],
+                        "egid": 100,
+                        "env": [],
+                        "errout": "cerr",
+                        "euid": 100,
+                        "eventq_index": 0,
+                        "executable": "tests/test-progs/hangu-rnic-isolated/bin/server",
+                        "gid": 100,
+                        "input": "cin",
+                        "kvmInSE": false,
+                        "maxStackSize": 67108864,
+                        "output": "cout",
+                        "pgid": 100,
+                        "pid": 100,
+                        "ppid": 0,
+                        "release": "5.1.0",
+                        "simpoint": 0,
+                        "system": "svrsys",
+                        "uid": 100,
+                        "useArchPT": false
+                    }
+                ],
+                "dcache_port": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "svrsys.membus.cpu_side_ports[2]",
+                    "is_source": "True"
+                },
+                "icache_port": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "svrsys.membus.cpu_side_ports[1]",
+                    "is_source": "True"
+                }
+            },
+            {
+                "type": "AtomicSimpleCPU",
+                "cxx_class": "AtomicSimpleCPU",
+                "name": "cpu1",
+                "path": "svrsys.cpu1",
+                "branchPred": null,
+                "checker": null,
+                "clk_domain": "svrsys.cpu_clk_domain",
+                "cpu_id": 1,
+                "do_checkpoint_insts": true,
+                "do_statistics_insts": true,
+                "dtb": {
+                    "type": "X86TLB",
+                    "cxx_class": "X86ISA::TLB",
+                    "name": "dtb",
+                    "path": "svrsys.cpu1.dtb",
+                    "eventq_index": 0,
+                    "size": 64,
+                    "system": "svrsys",
+                    "walker": {
+                        "type": "X86PagetableWalker",
+                        "cxx_class": "X86ISA::Walker",
+                        "name": "walker",
+                        "path": "svrsys.cpu1.dtb.walker",
+                        "clk_domain": "svrsys.cpu_clk_domain",
+                        "eventq_index": 0,
+                        "num_squash_per_cycle": 4,
+                        "power_model": [],
+                        "power_state": {
+                            "type": "PowerState",
+                            "cxx_class": "PowerState",
+                            "name": "power_state",
+                            "path": "svrsys.cpu1.dtb.walker.power_state",
+                            "clk_gate_bins": 20,
+                            "clk_gate_max": 1000000000000,
+                            "clk_gate_min": 1000,
+                            "default_state": "UNDEFINED",
+                            "eventq_index": 0,
+                            "leaders": [],
+                            "possible_states": []
+                        },
+                        "system": "svrsys",
+                        "port": {
+                            "role": "GEM5 REQUESTOR",
+                            "peer": "svrsys.membus.cpu_side_ports[9]",
+                            "is_source": "True"
+                        }
+                    }
+                },
+                "eventq_index": 0,
+                "function_trace": false,
+                "function_trace_start": 0,
+                "interrupts": [
+                    {
+                        "type": "X86LocalApic",
+                        "cxx_class": "X86ISA::Interrupts",
+                        "name": "interrupts",
+                        "path": "svrsys.cpu1.interrupts",
+                        "clk_domain": {
+                            "type": "DerivedClockDomain",
+                            "cxx_class": "DerivedClockDomain",
+                            "name": "clk_domain",
+                            "path": "svrsys.cpu1.interrupts.clk_domain",
+                            "clk_divider": 16,
+                            "clk_domain": "svrsys.cpu_clk_domain",
+                            "eventq_index": 0
+                        },
+                        "eventq_index": 0,
+                        "int_latency": 1000,
+                        "pio_latency": 100000,
+                        "system": "svrsys",
+                        "int_requestor": {
+                            "role": "GEM5 REQUESTOR",
+                            "peer": "svrsys.membus.cpu_side_ports[10]",
+                            "is_source": "True"
+                        },
+                        "int_responder": {
+                            "role": "GEM5 RESPONDER",
+                            "peer": "svrsys.membus.mem_side_ports[3]",
+                            "is_source": "False"
+                        },
+                        "pio": {
+                            "role": "GEM5 RESPONDER",
+                            "peer": "svrsys.membus.mem_side_ports[2]",
+                            "is_source": "False"
+                        }
+                    }
+                ],
+                "isa": [
+                    {
+                        "type": "X86ISA",
+                        "cxx_class": "X86ISA::ISA",
+                        "name": "isa",
+                        "path": "svrsys.cpu1.isa",
+                        "eventq_index": 0
+                    }
+                ],
+                "itb": {
+                    "type": "X86TLB",
+                    "cxx_class": "X86ISA::TLB",
+                    "name": "itb",
+                    "path": "svrsys.cpu1.itb",
+                    "eventq_index": 0,
+                    "size": 64,
+                    "system": "svrsys",
+                    "walker": {
+                        "type": "X86PagetableWalker",
+                        "cxx_class": "X86ISA::Walker",
+                        "name": "walker",
+                        "path": "svrsys.cpu1.itb.walker",
+                        "clk_domain": "svrsys.cpu_clk_domain",
+                        "eventq_index": 0,
+                        "num_squash_per_cycle": 4,
+                        "power_model": [],
+                        "power_state": {
+                            "type": "PowerState",
+                            "cxx_class": "PowerState",
+                            "name": "power_state",
+                            "path": "svrsys.cpu1.itb.walker.power_state",
+                            "clk_gate_bins": 20,
+                            "clk_gate_max": 1000000000000,
+                            "clk_gate_min": 1000,
+                            "default_state": "UNDEFINED",
+                            "eventq_index": 0,
+                            "leaders": [],
+                            "possible_states": []
+                        },
+                        "system": "svrsys",
+                        "port": {
+                            "role": "GEM5 REQUESTOR",
+                            "peer": "svrsys.membus.cpu_side_ports[8]",
+                            "is_source": "True"
+                        }
+                    }
+                },
+                "max_insts_all_threads": 0,
+                "max_insts_any_thread": 0,
+                "numThreads": 1,
+                "power_gating_on_idle": false,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "svrsys.cpu1.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": [
+                        "ON",
+                        "CLK_GATED",
+                        "OFF"
+                    ]
+                },
+                "progress_interval": 0,
+                "pwr_gating_latency": 300,
+                "simpoint_start_insts": [],
+                "simulate_data_stalls": false,
+                "simulate_inst_stalls": false,
+                "socket_id": 1,
+                "switched_out": false,
+                "syscallRetryLatency": 200,
+                "system": "svrsys",
+                "tracer": {
+                    "type": "ExeTracer",
+                    "cxx_class": "Trace::ExeTracer",
+                    "name": "tracer",
+                    "path": "svrsys.cpu1.tracer",
+                    "eventq_index": 0
+                },
+                "wait_for_remote_gdb": false,
+                "width": 1,
+                "workload": [
+                    {
+                        "type": "Process",
+                        "cxx_class": "Process",
+                        "name": "workload",
+                        "path": "svrsys.cpu1.workload",
+                        "cmd": [
+                            "tests/test-progs/hangu-rnic-isolated/bin/server",
+                            "-s",
+                            "10",
+                            "-t",
+                            "1",
+                            "-m",
+                            "0",
+                            "-c",
+                            "1"
+                        ],
+                        "cwd": "/home/yunkunliao/csRNA_merge",
+                        "drivers": [
+                            {
+                                "type": "HanGuDriver",
+                                "cxx_class": "HanGuDriver",
+                                "name": "drivers",
+                                "path": "svrsys.cpu1.workload.drivers",
+                                "device": "svrsys.platform.rdma_nic",
+                                "eventq_index": 0,
+                                "filename": "hangu_rnic1"
+                            }
+                        ],
+                        "egid": 100,
+                        "env": [],
+                        "errout": "cerr",
+                        "euid": 100,
+                        "eventq_index": 0,
+                        "executable": "tests/test-progs/hangu-rnic-isolated/bin/server",
+                        "gid": 100,
+                        "input": "cin",
+                        "kvmInSE": false,
+                        "maxStackSize": 67108864,
+                        "output": "cout",
+                        "pgid": 100,
+                        "pid": 101,
+                        "ppid": 0,
+                        "release": "5.1.0",
+                        "simpoint": 0,
+                        "system": "svrsys",
+                        "uid": 100,
+                        "useArchPT": false
+                    }
+                ],
+                "dcache_port": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "svrsys.membus.cpu_side_ports[7]",
+                    "is_source": "True"
+                },
+                "icache_port": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "svrsys.membus.cpu_side_ports[6]",
+                    "is_source": "True"
+                }
+            }
+        ],
+        "cpu_clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "cpu_clk_domain",
+            "path": "svrsys.cpu_clk_domain",
+            "clock": [
+                500
+            ],
+            "domain_id": -1,
+            "eventq_index": 0,
+            "init_perf_level": 0,
+            "voltage_domain": "svrsys.cpu_voltage_domain"
+        },
+        "cpu_voltage_domain": {
+            "type": "VoltageDomain",
+            "cxx_class": "VoltageDomain",
+            "name": "cpu_voltage_domain",
+            "path": "svrsys.cpu_voltage_domain",
+            "eventq_index": 0,
+            "voltage": [
+                1.0
+            ]
+        },
+        "dmabridge": {
+            "type": "Bridge",
+            "cxx_class": "Bridge",
+            "name": "dmabridge",
+            "path": "svrsys.dmabridge",
+            "clk_domain": "svrsys.clk_domain",
+            "delay": 250000,
+            "eventq_index": 0,
+            "power_model": [],
+            "power_state": {
+                "type": "PowerState",
+                "cxx_class": "PowerState",
+                "name": "power_state",
+                "path": "svrsys.dmabridge.power_state",
+                "clk_gate_bins": 20,
+                "clk_gate_max": 1000000000000,
+                "clk_gate_min": 1000,
+                "default_state": "UNDEFINED",
+                "eventq_index": 0,
+                "leaders": [],
+                "possible_states": []
+            },
+            "ranges": [
+                "0:2147483648"
+            ],
+            "req_size": 16,
+            "resp_size": 16,
+            "cpu_side_port": {
+                "role": "GEM5 RESPONDER",
+                "peer": "svrsys.iobus.mem_side_ports[0]",
+                "is_source": "False"
+            },
+            "mem_side_port": {
+                "role": "GEM5 REQUESTOR",
+                "peer": "svrsys.membus.cpu_side_ports[11]",
+                "is_source": "True"
+            }
+        },
+        "dvfs_handler": {
+            "type": "DVFSHandler",
+            "cxx_class": "DVFSHandler",
+            "name": "dvfs_handler",
+            "path": "svrsys.dvfs_handler",
+            "domains": [],
+            "enable": false,
+            "eventq_index": 0,
+            "sys_clk_domain": "svrsys.clk_domain",
+            "transition_latency": 100000000
+        },
+        "intrctrl": {
+            "type": "IntrControl",
+            "cxx_class": "IntrControl",
+            "name": "intrctrl",
+            "path": "svrsys.intrctrl",
+            "eventq_index": 0,
+            "sys": "svrsys"
+        },
+        "iobridge": {
+            "type": "Bridge",
+            "cxx_class": "Bridge",
+            "name": "iobridge",
+            "path": "svrsys.iobridge",
+            "clk_domain": "svrsys.clk_domain",
+            "delay": 250000,
+            "eventq_index": 0,
+            "power_model": [],
+            "power_state": {
+                "type": "PowerState",
+                "cxx_class": "PowerState",
+                "name": "power_state",
+                "path": "svrsys.iobridge.power_state",
+                "clk_gate_bins": 20,
+                "clk_gate_max": 1000000000000,
+                "clk_gate_min": 1000,
+                "default_state": "UNDEFINED",
+                "eventq_index": 0,
+                "leaders": [],
+                "possible_states": []
+            },
+            "ranges": [
+                "3221225472:4294901760",
+                "9223372036854775808:11529215046068469759",
+                "13835058055282163712:18446744073709551615"
+            ],
+            "req_size": 16,
+            "resp_size": 16,
+            "cpu_side_port": {
+                "role": "GEM5 RESPONDER",
+                "peer": "svrsys.membus.mem_side_ports[5]",
+                "is_source": "False"
+            },
+            "mem_side_port": {
+                "role": "GEM5 REQUESTOR",
+                "peer": "svrsys.iobus.cpu_side_ports[0]",
+                "is_source": "True"
+            }
+        },
+        "iobus": {
+            "type": "NoncoherentXBar",
+            "cxx_class": "NoncoherentXBar",
+            "name": "iobus",
+            "path": "svrsys.iobus",
+            "clk_domain": "svrsys.clk_domain",
+            "eventq_index": 0,
+            "forward_latency": 1,
+            "frontend_latency": 2,
+            "header_latency": 1,
+            "power_model": [],
+            "power_state": {
+                "type": "PowerState",
+                "cxx_class": "PowerState",
+                "name": "power_state",
+                "path": "svrsys.iobus.power_state",
+                "clk_gate_bins": 20,
+                "clk_gate_max": 1000000000000,
+                "clk_gate_min": 1000,
+                "default_state": "UNDEFINED",
+                "eventq_index": 0,
+                "leaders": [],
+                "possible_states": []
+            },
+            "response_latency": 2,
+            "use_default_range": false,
+            "width": 16,
+            "cpu_side_ports": {
+                "role": "GEM5 RESPONDER",
+                "peer": [
+                    "svrsys.iobridge.mem_side_port",
+                    "svrsys.platform.rdma_nic.dma"
+                ],
+                "is_source": "False"
+            },
+            "default": {
+                "role": "GEM5 REQUESTOR",
+                "peer": "svrsys.platform.pci_host.pio",
+                "is_source": "True"
+            },
+            "mem_side_ports": {
+                "role": "GEM5 REQUESTOR",
+                "peer": [
+                    "svrsys.dmabridge.cpu_side_port",
+                    "svrsys.platform.rdma_nic.pio"
+                ],
+                "is_source": "True"
+            }
+        },
+        "mem_ctrls": [
+            {
+                "type": "MemCtrl",
+                "cxx_class": "MemCtrl",
+                "name": "mem_ctrls",
+                "path": "svrsys.mem_ctrls",
+                "clk_domain": "svrsys.clk_domain",
+                "command_window": 10000,
+                "dram": {
+                    "type": "DRAMInterface",
+                    "cxx_class": "DRAMInterface",
+                    "name": "dram",
+                    "path": "svrsys.mem_ctrls.dram",
+                    "IDD0": 0.055,
+                    "IDD02": 0.0,
+                    "IDD2N": 0.032,
+                    "IDD2N2": 0.0,
+                    "IDD2P0": 0.0,
+                    "IDD2P02": 0.0,
+                    "IDD2P1": 0.032,
+                    "IDD2P12": 0.0,
+                    "IDD3N": 0.038,
+                    "IDD3N2": 0.0,
+                    "IDD3P0": 0.0,
+                    "IDD3P02": 0.0,
+                    "IDD3P1": 0.038,
+                    "IDD3P12": 0.0,
+                    "IDD4R": 0.157,
+                    "IDD4R2": 0.0,
+                    "IDD4W": 0.125,
+                    "IDD4W2": 0.0,
+                    "IDD5": 0.23500000000000001,
+                    "IDD52": 0.0,
+                    "IDD6": 0.02,
+                    "IDD62": 0.0,
+                    "VDD": 1.5,
+                    "VDD2": 0.0,
+                    "activation_limit": 4,
+                    "addr_mapping": "RoRaBaCoCh",
+                    "bank_groups_per_rank": 0,
+                    "banks_per_rank": 8,
+                    "beats_per_clock": 2,
+                    "burst_length": 8,
+                    "clk_domain": "svrsys.clk_domain",
+                    "conf_table_reported": true,
+                    "data_clock_sync": false,
+                    "device_bus_width": 8,
+                    "device_rowbuffer_size": 1024,
+                    "device_size": 536870912,
+                    "devices_per_rank": 8,
+                    "dll": true,
+                    "enable_dram_powerdown": false,
+                    "eventq_index": 0,
+                    "image_file": "",
+                    "in_addr_map": true,
+                    "kvm_map": true,
+                    "max_accesses_per_row": 16,
+                    "null": false,
+                    "page_policy": "open_adaptive",
+                    "power_model": [],
+                    "power_state": {
+                        "type": "PowerState",
+                        "cxx_class": "PowerState",
+                        "name": "power_state",
+                        "path": "svrsys.mem_ctrls.dram.power_state",
+                        "clk_gate_bins": 20,
+                        "clk_gate_max": 1000000000000,
+                        "clk_gate_min": 1000,
+                        "default_state": "UNDEFINED",
+                        "eventq_index": 0,
+                        "leaders": [],
+                        "possible_states": []
+                    },
+                    "range": "0:2147483648",
+                    "ranks_per_channel": 2,
+                    "read_buffer_size": 32,
+                    "tAAD": 1250,
+                    "tBURST": 5000,
+                    "tBURST_MAX": 5000,
+                    "tBURST_MIN": 5000,
+                    "tCCD_L": 0,
+                    "tCCD_L_WR": 0,
+                    "tCK": 1250,
+                    "tCL": 13750,
+                    "tCS": 2500,
+                    "tPPD": 0,
+                    "tRAS": 35000,
+                    "tRCD": 13750,
+                    "tREFI": 7800000,
+                    "tRFC": 260000,
+                    "tRP": 13750,
+                    "tRRD": 6000,
+                    "tRRD_L": 0,
+                    "tRTP": 7500,
+                    "tRTW": 2500,
+                    "tWR": 15000,
+                    "tWTR": 7500,
+                    "tWTR_L": 7500,
+                    "tXAW": 30000,
+                    "tXP": 6000,
+                    "tXPDLL": 0,
+                    "tXS": 270000,
+                    "tXSDLL": 0,
+                    "two_cycle_activate": false,
+                    "write_buffer_size": 64
+                },
+                "eventq_index": 0,
+                "mem_sched_policy": "frfcfs",
+                "min_writes_per_switch": 16,
+                "nvm": null,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "svrsys.mem_ctrls.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "qos_policy": null,
+                "qos_priorities": 1,
+                "qos_priority_escalation": false,
+                "qos_q_policy": "fifo",
+                "qos_requestors": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "qos_syncro_scheduler": false,
+                "qos_turnaround_policy": null,
+                "static_backend_latency": 10000,
+                "static_frontend_latency": 10000,
+                "system": "svrsys",
+                "write_high_thresh_perc": 85,
+                "write_low_thresh_perc": 50,
+                "port": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": "svrsys.membus.mem_side_ports[4]",
+                    "is_source": "False"
+                }
+            }
+        ],
+        "membus": {
+            "type": "CoherentXBar",
+            "cxx_class": "CoherentXBar",
+            "name": "membus",
+            "path": "svrsys.membus",
+            "clk_domain": "svrsys.clk_domain",
+            "eventq_index": 0,
+            "forward_latency": 4,
+            "frontend_latency": 3,
+            "header_latency": 1,
+            "max_outstanding_snoops": 512,
+            "max_routing_table_size": 512,
+            "point_of_coherency": true,
+            "point_of_unification": true,
+            "power_model": [],
+            "power_state": {
+                "type": "PowerState",
+                "cxx_class": "PowerState",
+                "name": "power_state",
+                "path": "svrsys.membus.power_state",
+                "clk_gate_bins": 20,
+                "clk_gate_max": 1000000000000,
+                "clk_gate_min": 1000,
+                "default_state": "UNDEFINED",
+                "eventq_index": 0,
+                "leaders": [],
+                "possible_states": []
+            },
+            "response_latency": 2,
+            "snoop_filter": {
+                "type": "SnoopFilter",
+                "cxx_class": "SnoopFilter",
+                "name": "snoop_filter",
+                "path": "svrsys.membus.snoop_filter",
+                "eventq_index": 0,
+                "lookup_latency": 1,
+                "max_capacity": 8388608,
+                "system": "svrsys"
+            },
+            "snoop_response_latency": 4,
+            "system": "svrsys",
+            "use_default_range": false,
+            "width": 16,
+            "cpu_side_ports": {
+                "role": "GEM5 RESPONDER",
+                "peer": [
+                    "svrsys.system_port",
+                    "svrsys.cpu0.icache_port",
+                    "svrsys.cpu0.dcache_port",
+                    "svrsys.cpu0.itb.walker.port",
+                    "svrsys.cpu0.dtb.walker.port",
+                    "svrsys.cpu0.interrupts.int_requestor",
+                    "svrsys.cpu1.icache_port",
+                    "svrsys.cpu1.dcache_port",
+                    "svrsys.cpu1.itb.walker.port",
+                    "svrsys.cpu1.dtb.walker.port",
+                    "svrsys.cpu1.interrupts.int_requestor",
+                    "svrsys.dmabridge.mem_side_port"
+                ],
+                "is_source": "False"
+            },
+            "mem_side_ports": {
+                "role": "GEM5 REQUESTOR",
+                "peer": [
+                    "svrsys.cpu0.interrupts.pio",
+                    "svrsys.cpu0.interrupts.int_responder",
+                    "svrsys.cpu1.interrupts.pio",
+                    "svrsys.cpu1.interrupts.int_responder",
+                    "svrsys.mem_ctrls.port",
+                    "svrsys.iobridge.cpu_side_port"
+                ],
+                "is_source": "True"
+            }
+        },
+        "platform": {
+            "type": "RnicPlatform",
+            "cxx_class": "RnicPlatform",
+            "name": "platform",
+            "path": "svrsys.platform",
+            "eventq_index": 0,
+            "intrctrl": "svrsys.intrctrl",
+            "system": "svrsys",
+            "pci_host": {
+                "type": "GenericPciHost",
+                "cxx_class": "GenericPciHost",
+                "name": "pci_host",
+                "path": "svrsys.platform.pci_host",
+                "clk_domain": "svrsys.clk_domain",
+                "conf_base": 13835058055282163712,
+                "conf_device_bits": 8,
+                "conf_size": 16777216,
+                "eventq_index": 0,
+                "pci_dma_base": 0,
+                "pci_mem_base": 0,
+                "pci_pio_base": 9223372036854775808,
+                "platform": "svrsys.platform",
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "svrsys.platform.pci_host.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "system": "svrsys",
+                "pio": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": "svrsys.iobus.default",
+                    "is_source": "False"
+                }
+            },
+            "rdma_nic": {
+                "type": "HanGuRnic",
+                "cxx_class": "HanGuRnic",
+                "name": "rdma_nic",
+                "path": "svrsys.platform.rdma_nic",
+                "BAR0": 0,
+                "BAR0LegacyIO": false,
+                "BAR0Size": 1024,
+                "BAR1": 0,
+                "BAR1LegacyIO": false,
+                "BAR1Size": 0,
+                "BAR2": 0,
+                "BAR2LegacyIO": false,
+                "BAR2Size": 0,
+                "BAR3": 0,
+                "BAR3LegacyIO": false,
+                "BAR3Size": 0,
+                "BAR4": 0,
+                "BAR4LegacyIO": false,
+                "BAR4Size": 0,
+                "BAR5": 0,
+                "BAR5LegacyIO": false,
+                "BAR5Size": 0,
+                "BIST": 0,
+                "CacheLineSize": 0,
+                "CapabilityPtr": 0,
+                "CardbusCIS": 0,
+                "ClassCode": 2,
+                "Command": 0,
+                "DeviceID": 4213,
+                "ExpansionROM": 0,
+                "HeaderType": 0,
+                "InterruptLine": 30,
+                "InterruptPin": 1,
+                "LatencyTimer": 0,
+                "LegacyIOBase": 0,
+                "MSICAPBaseOffset": 0,
+                "MSICAPCapId": 0,
+                "MSICAPMaskBits": 0,
+                "MSICAPMsgAddr": 0,
+                "MSICAPMsgCtrl": 0,
+                "MSICAPMsgData": 0,
+                "MSICAPMsgUpperAddr": 0,
+                "MSICAPNextCapability": 0,
+                "MSICAPPendingBits": 0,
+                "MSIXCAPBaseOffset": 0,
+                "MSIXCAPCapId": 0,
+                "MSIXCAPNextCapability": 0,
+                "MSIXMsgCtrl": 0,
+                "MSIXPbaOffset": 0,
+                "MSIXTableOffset": 0,
+                "MaximumLatency": 0,
+                "MinimumGrant": 255,
+                "PMCAPBaseOffset": 0,
+                "PMCAPCapId": 0,
+                "PMCAPCapabilities": 0,
+                "PMCAPCtrlStatus": 0,
+                "PMCAPNextCapability": 0,
+                "PXCAPBaseOffset": 0,
+                "PXCAPCapId": 0,
+                "PXCAPCapabilities": 0,
+                "PXCAPDevCap2": 0,
+                "PXCAPDevCapabilities": 0,
+                "PXCAPDevCtrl": 0,
+                "PXCAPDevCtrl2": 0,
+                "PXCAPDevStatus": 0,
+                "PXCAPLinkCap": 0,
+                "PXCAPLinkCtrl": 0,
+                "PXCAPLinkStatus": 0,
+                "PXCAPNextCapability": 0,
+                "ProgIF": 0,
+                "Revision": 0,
+                "Status": 0,
+                "SubClassCode": 0,
+                "SubsystemID": 4104,
+                "SubsystemVendorID": 32902,
+                "VendorID": 32902,
+                "clk_domain": "svrsys.clk_domain",
+                "config_latency": 20000,
+                "cpu_num": 2,
+                "cqc_cache_num": 2000,
+                "dma_read_delay": 500000,
+                "dma_write_delay": 250000,
+                "ether_speed": "80.000000",
+                "eventq_index": 0,
+                "host": "svrsys.platform.pci_host",
+                "link_delay": 1000000,
+                "mac_addr": 10,
+                "mpt_cache_num": 40000,
+                "mtt_cache_num": 50000,
+                "pci_bus": 0,
+                "pci_dev": 0,
+                "pci_func": 0,
+                "pci_speed": "63.000000",
+                "pio_latency": 30000,
+                "power_model": [],
+                "power_state": {
+                    "type": "PowerState",
+                    "cxx_class": "PowerState",
+                    "name": "power_state",
+                    "path": "svrsys.platform.rdma_nic.power_state",
+                    "clk_gate_bins": 20,
+                    "clk_gate_max": 1000000000000,
+                    "clk_gate_min": 1000,
+                    "default_state": "UNDEFINED",
+                    "eventq_index": 0,
+                    "leaders": [],
+                    "possible_states": []
+                },
+                "qpc_cache_cap": 300,
+                "reorder_cap": 64,
+                "sid": 0,
+                "ssid": 0,
+                "system": "svrsys",
+                "dma": {
+                    "role": "GEM5 REQUESTOR",
+                    "peer": "svrsys.iobus.cpu_side_ports[1]",
+                    "is_source": "True"
+                },
+                "interface": {
+                    "role": "ETHERNET",
+                    "peer": "etherswitch.interface[0]",
+                    "is_source": "False"
+                },
+                "pio": {
+                    "role": "GEM5 RESPONDER",
+                    "peer": "svrsys.iobus.mem_side_ports[1]",
+                    "is_source": "False"
+                }
+            }
+        },
+        "voltage_domain": {
+            "type": "VoltageDomain",
+            "cxx_class": "VoltageDomain",
+            "name": "voltage_domain",
+            "path": "svrsys.voltage_domain",
+            "eventq_index": 0,
+            "voltage": [
+                1.0
+            ]
+        },
+        "system_port": {
+            "role": "GEM5 REQUESTOR",
+            "peer": "svrsys.membus.cpu_side_ports[0]",
+            "is_source": "True"
+        }
+    }
+}

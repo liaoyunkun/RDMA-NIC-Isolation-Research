@@ -1,0 +1,1127 @@
+
+---------- Begin Simulation Statistics ----------
+cltsys.cpu0.Branches                         12474339                       # Number of branches fetched
+cltsys.cpu0.committedInsts                   78866421                       # Number of instructions committed
+cltsys.cpu0.committedOps                    124719355                       # Number of ops (including micro ops) committed
+cltsys.cpu0.idle_fraction                    0.166545                       # Percentage of idle cycles
+cltsys.cpu0.not_idle_fraction                0.833455                       # Percentage of non-idle cycles
+cltsys.cpu0.numCycles                       141356160                       # number of cpu cycles simulated
+cltsys.cpu0.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+cltsys.cpu0.numWorkItemsStarted                     0                       # number of work items this cpu started
+cltsys.cpu0.num_busy_cycles              117814018.348503                       # Number of busy cycles
+cltsys.cpu0.num_cc_register_reads            33443477                       # number of times the CC registers were read
+cltsys.cpu0.num_cc_register_writes           16791384                       # number of times the CC registers were written
+cltsys.cpu0.num_conditional_control_insts      6265336                       # number of instructions that are conditional controls
+cltsys.cpu0.num_fp_alu_accesses                 22129                       # Number of float alu accesses
+cltsys.cpu0.num_fp_insts                        22129                       # number of float instructions
+cltsys.cpu0.num_fp_register_reads               29717                       # number of times the floating registers were read
+cltsys.cpu0.num_fp_register_writes              11550                       # number of times the floating registers were written
+cltsys.cpu0.num_func_calls                    4138258                       # number of times a function call or return occured
+cltsys.cpu0.num_idle_cycles              23542141.651497                       # Number of idle cycles
+cltsys.cpu0.num_int_alu_accesses            120572882                       # Number of integer alu accesses
+cltsys.cpu0.num_int_insts                   120572882                       # number of integer instructions
+cltsys.cpu0.num_int_register_reads          276314129                       # number of times the integer registers were read
+cltsys.cpu0.num_int_register_writes          89425919                       # number of times the integer registers were written
+cltsys.cpu0.num_load_insts                   33220121                       # Number of load instructions
+cltsys.cpu0.num_mem_refs                     51891907                       # number of memory refs
+cltsys.cpu0.num_store_insts                  18671786                       # Number of store instructions
+cltsys.cpu0.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+cltsys.cpu0.num_vec_insts                           0                       # number of vector instructions
+cltsys.cpu0.num_vec_register_reads                  0                       # number of times the vector registers were read
+cltsys.cpu0.num_vec_register_writes                 0                       # number of times the vector registers were written
+cltsys.cpu0.op_class::No_OpClass              2070811      1.66%      1.66% # Class of executed instruction
+cltsys.cpu0.op_class::IntAlu                 70746809     56.72%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::IntMult                     130      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::IntDiv                      642      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatAdd                    873      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatCmp                      0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatCvt                      0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatMult                     0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatMultAcc                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatDiv                      0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatMisc                     0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::FloatSqrt                     0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdAdd                     206      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdAddAcc                    0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdAlu                    2286      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdCmp                      28      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdCvt                    2190      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdMisc                   3644      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdMult                      0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdMultAcc                   0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdShift                     0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdShiftAcc                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdDiv                       0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdSqrt                      0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatAdd                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatAlu                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatCmp                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatCvt                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatDiv                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatMisc                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatMult                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatMultAcc              0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatSqrt                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdReduceAdd                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdReduceAlu                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdReduceCmp                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatReduceAdd            0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdFloatReduceCmp            0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdAes                       0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdAesMix                    0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdSha1Hash                  0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdSha1Hash2                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdSha256Hash                0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdSha256Hash2               0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdShaSigma2                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdShaSigma3                 0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::SimdPredAlu                   0      0.00%     58.39% # Class of executed instruction
+cltsys.cpu0.op_class::MemRead                33218228     26.63%     85.03% # Class of executed instruction
+cltsys.cpu0.op_class::MemWrite               18662401     14.96%     99.99% # Class of executed instruction
+cltsys.cpu0.op_class::FloatMemRead               1893      0.00%     99.99% # Class of executed instruction
+cltsys.cpu0.op_class::FloatMemWrite              9385      0.01%    100.00% # Class of executed instruction
+cltsys.cpu0.op_class::IprAccess                     0      0.00%    100.00% # Class of executed instruction
+cltsys.cpu0.op_class::InstPrefetch                  0      0.00%    100.00% # Class of executed instruction
+cltsys.cpu0.op_class::total                 124719526                       # Class of executed instruction
+cltsys.cpu0.workload.numSyscalls                  147                       # Number of system calls
+cltsys.cpu1.Branches                         14966795                       # Number of branches fetched
+cltsys.cpu1.committedInsts                   94644016                       # Number of instructions committed
+cltsys.cpu1.committedOps                    149643600                       # Number of ops (including micro ops) committed
+cltsys.cpu1.idle_fraction                    0.000000                       # Percentage of idle cycles
+cltsys.cpu1.not_idle_fraction                1.000000                       # Percentage of non-idle cycles
+cltsys.cpu1.numCycles                       169602601                       # number of cpu cycles simulated
+cltsys.cpu1.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+cltsys.cpu1.numWorkItemsStarted                     0                       # number of work items this cpu started
+cltsys.cpu1.num_busy_cycles              169602600.998000                       # Number of busy cycles
+cltsys.cpu1.num_cc_register_reads            40099023                       # number of times the CC registers were read
+cltsys.cpu1.num_cc_register_writes           20124133                       # number of times the CC registers were written
+cltsys.cpu1.num_conditional_control_insts      7513338                       # number of instructions that are conditional controls
+cltsys.cpu1.num_fp_alu_accesses                 22281                       # Number of float alu accesses
+cltsys.cpu1.num_fp_insts                        22281                       # number of float instructions
+cltsys.cpu1.num_fp_register_reads               29973                       # number of times the floating registers were read
+cltsys.cpu1.num_fp_register_writes              11680                       # number of times the floating registers were written
+cltsys.cpu1.num_func_calls                    4967922                       # number of times a function call or return occured
+cltsys.cpu1.num_idle_cycles                  0.002000                       # Number of idle cycles
+cltsys.cpu1.num_int_alu_accesses            144667355                       # Number of integer alu accesses
+cltsys.cpu1.num_int_insts                   144667355                       # number of integer instructions
+cltsys.cpu1.num_int_register_reads          331556656                       # number of times the integer registers were read
+cltsys.cpu1.num_int_register_writes         107291419                       # number of times the integer registers were written
+cltsys.cpu1.num_load_insts                   39866627                       # Number of load instructions
+cltsys.cpu1.num_mem_refs                     62274943                       # number of memory refs
+cltsys.cpu1.num_store_insts                  22408316                       # Number of store instructions
+cltsys.cpu1.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+cltsys.cpu1.num_vec_insts                           0                       # number of vector instructions
+cltsys.cpu1.num_vec_register_reads                  0                       # number of times the vector registers were read
+cltsys.cpu1.num_vec_register_writes                 0                       # number of times the vector registers were written
+cltsys.cpu1.op_class::No_OpClass              2485672      1.66%      1.66% # Class of executed instruction
+cltsys.cpu1.op_class::IntAlu                 84873027     56.72%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::IntMult                     149      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::IntDiv                      649      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatAdd                    877      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatCmp                      0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatCvt                      0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatMult                     0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatMultAcc                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatDiv                      0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatMisc                     0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::FloatSqrt                     0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdAdd                     206      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdAddAcc                    0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdAlu                    2316      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdCmp                      28      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdCvt                    2220      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdMisc                   3688      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdMult                      0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdMultAcc                   0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdShift                     0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdShiftAcc                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdDiv                       0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdSqrt                      0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatAdd                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatAlu                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatCmp                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatCvt                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatDiv                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatMisc                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatMult                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatMultAcc              0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatSqrt                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdReduceAdd                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdReduceAlu                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdReduceCmp                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatReduceAdd            0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdFloatReduceCmp            0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdAes                       0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdAesMix                    0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdSha1Hash                  0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdSha1Hash2                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdSha256Hash                0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdSha256Hash2               0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdShaSigma2                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdShaSigma3                 0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::SimdPredAlu                   0      0.00%     58.38% # Class of executed instruction
+cltsys.cpu1.op_class::MemRead                39864712     26.64%     85.02% # Class of executed instruction
+cltsys.cpu1.op_class::MemWrite               22398925     14.97%     99.99% # Class of executed instruction
+cltsys.cpu1.op_class::FloatMemRead               1915      0.00%     99.99% # Class of executed instruction
+cltsys.cpu1.op_class::FloatMemWrite              9391      0.01%    100.00% # Class of executed instruction
+cltsys.cpu1.op_class::IprAccess                     0      0.00%    100.00% # Class of executed instruction
+cltsys.cpu1.op_class::InstPrefetch                  0      0.00%    100.00% # Class of executed instruction
+cltsys.cpu1.op_class::total                 149643775                       # Class of executed instruction
+cltsys.cpu1.workload.numSyscalls                  151                       # Number of system calls
+cltsys.membus.snoop_filter.hit_multi_requests            0                       # Number of requests hitting in the snoop filter with multiple (>1) holders of the requested data.
+cltsys.membus.snoop_filter.hit_multi_snoops            0                       # Number of snoops hitting in the snoop filter with multiple (>1) holders of the requested data.
+cltsys.membus.snoop_filter.hit_single_requests            0                       # Number of requests hitting in the snoop filter with a single holder of the requested data.
+cltsys.membus.snoop_filter.hit_single_snoops            0                       # Number of snoops hitting in the snoop filter with a single holder of the requested data.
+cltsys.membus.snoop_filter.tot_requests             0                       # Total number of requests made to the snoop filter.
+cltsys.membus.snoop_filter.tot_snoops               0                       # Total number of snoops made to the snoop filter.
+cltsys.platform.rdma_nic.descDMAReads               0                       # Number of descriptors the device read w/ DMA
+cltsys.platform.rdma_nic.descDMAWrites              0                       # Number of descriptors the device wrote w/ DMA
+cltsys.platform.rdma_nic.descDmaReadBytes            0                       # number of descriptor bytes read w/ DMA
+cltsys.platform.rdma_nic.descDmaWriteBytes            0                       # number of descriptor bytes write w/ DMA
+cltsys.platform.rdma_nic.rxBandwidth      15641308140                       # Receive Bandwidth (bits/s)
+cltsys.platform.rdma_nic.rxBytes            165800408                       # Bytes Received
+cltsys.platform.rdma_nic.rxPPS                 589684                       # Packet Reception Rate (packets/s)
+cltsys.platform.rdma_nic.rxPackets              50006                       # Number of Packets Received
+cltsys.platform.rdma_nic.totBandwidth     15686628955                       # Total Bandwidth (bits/s)
+cltsys.platform.rdma_nic.totBytes           166280816                       # Total Bytes
+cltsys.platform.rdma_nic.totPPS                825601                       # Total Tranmission Rate (packets/s)
+cltsys.platform.rdma_nic.totPackets             70012                       # Total Packets
+cltsys.platform.rdma_nic.txBandwidth         45320815                       # Transmit Bandwidth (bits/s)
+cltsys.platform.rdma_nic.txBytes               480408                       # Bytes Transmitted
+cltsys.platform.rdma_nic.txPPS                 235916                       # Packet Tranmission Rate (packets/s)
+cltsys.platform.rdma_nic.txPackets              20006                       # Number of Packets Transmitted
+final_tick                                84801300000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
+host_inst_rate                                1694988                       # Simulator instruction rate (inst/s)
+host_mem_usage                                4562396                       # Number of bytes of host memory used
+host_op_rate                                  2800569                       # Simulator op (including micro ops) rate (op/s)
+host_seconds                                   200.76                       # Real time elapsed on the host
+host_tick_rate                              422402002                       # Simulator tick rate (ticks/s)
+sim_freq                                 1000000000000                       # Frequency of simulated ticks
+sim_insts                                   340285220                       # Number of instructions simulated
+sim_ops                                     562241333                       # Number of ops (including micro ops) simulated
+sim_seconds                                  0.084801                       # Number of seconds simulated
+sim_ticks                                 84801300000                       # Number of ticks simulated
+svrsys.cpu0.Branches                         15840116                       # Number of branches fetched
+svrsys.cpu0.committedInsts                   83248105                       # Number of instructions committed
+svrsys.cpu0.committedOps                    144177645                       # Number of ops (including micro ops) committed
+svrsys.cpu0.idle_fraction                    0.000093                       # Percentage of idle cycles
+svrsys.cpu0.not_idle_fraction                0.999907                       # Percentage of non-idle cycles
+svrsys.cpu0.numCycles                       169586883                       # number of cpu cycles simulated
+svrsys.cpu0.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+svrsys.cpu0.numWorkItemsStarted                     0                       # number of work items this cpu started
+svrsys.cpu0.num_busy_cycles              169571166.454581                       # Number of busy cycles
+svrsys.cpu0.num_cc_register_reads            56388686                       # number of times the CC registers were read
+svrsys.cpu0.num_cc_register_writes           32667773                       # number of times the CC registers were written
+svrsys.cpu0.num_conditional_control_insts      9230543                       # number of instructions that are conditional controls
+svrsys.cpu0.num_fp_alu_accesses               1283216                       # Number of float alu accesses
+svrsys.cpu0.num_fp_insts                      1283216                       # number of float instructions
+svrsys.cpu0.num_fp_register_reads             1611617                       # number of times the floating registers were read
+svrsys.cpu0.num_fp_register_writes             852520                       # number of times the floating registers were written
+svrsys.cpu0.num_func_calls                    4266202                       # number of times a function call or return occured
+svrsys.cpu0.num_idle_cycles              15716.545419                       # Number of idle cycles
+svrsys.cpu0.num_int_alu_accesses            140703965                       # Number of integer alu accesses
+svrsys.cpu0.num_int_insts                   140703965                       # number of integer instructions
+svrsys.cpu0.num_int_register_reads          297981395                       # number of times the integer registers were read
+svrsys.cpu0.num_int_register_writes         110550312                       # number of times the integer registers were written
+svrsys.cpu0.num_load_insts                   28785054                       # Number of load instructions
+svrsys.cpu0.num_mem_refs                     43814833                       # number of memory refs
+svrsys.cpu0.num_store_insts                  15029779                       # Number of store instructions
+svrsys.cpu0.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+svrsys.cpu0.num_vec_insts                           0                       # number of vector instructions
+svrsys.cpu0.num_vec_register_reads                  0                       # number of times the vector registers were read
+svrsys.cpu0.num_vec_register_writes                 0                       # number of times the vector registers were written
+svrsys.cpu0.op_class::No_OpClass              2119168      1.47%      1.47% # Class of executed instruction
+svrsys.cpu0.op_class::IntAlu                 97576571     67.48%     68.95% # Class of executed instruction
+svrsys.cpu0.op_class::IntMult                   60100      0.04%     68.99% # Class of executed instruction
+svrsys.cpu0.op_class::IntDiv                   410023      0.28%     69.27% # Class of executed instruction
+svrsys.cpu0.op_class::FloatAdd                  50894      0.04%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatCmp                      0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatCvt                      0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatMult                     0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatMultAcc                  0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatDiv                      0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatMisc                     0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::FloatSqrt                     0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::SimdAdd                     202      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::SimdAddAcc                    0      0.00%     69.31% # Class of executed instruction
+svrsys.cpu0.op_class::SimdAlu                  182536      0.13%     69.43% # Class of executed instruction
+svrsys.cpu0.op_class::SimdCmp                      28      0.00%     69.43% # Class of executed instruction
+svrsys.cpu0.op_class::SimdCvt                  102412      0.07%     69.50% # Class of executed instruction
+svrsys.cpu0.op_class::SimdMisc                 243968      0.17%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdMult                      0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdMultAcc                   0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdShift                     0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdShiftAcc                  0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdDiv                       0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdSqrt                      0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatAdd                  0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatAlu                  0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatCmp                  0      0.00%     69.67% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatCvt              30000      0.02%     69.69% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatDiv              10000      0.01%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatMisc                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatMult                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatMultAcc              0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatSqrt                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdReduceAdd                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdReduceAlu                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdReduceCmp                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatReduceAdd            0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdFloatReduceCmp            0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdAes                       0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdAesMix                    0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdSha1Hash                  0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdSha1Hash2                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdSha256Hash                0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdSha256Hash2               0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdShaSigma2                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdShaSigma3                 0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::SimdPredAlu                   0      0.00%     69.70% # Class of executed instruction
+svrsys.cpu0.op_class::MemRead                28523006     19.73%     89.42% # Class of executed instruction
+svrsys.cpu0.op_class::MemWrite               14710392     10.17%     99.60% # Class of executed instruction
+svrsys.cpu0.op_class::FloatMemRead             262048      0.18%     99.78% # Class of executed instruction
+svrsys.cpu0.op_class::FloatMemWrite            319387      0.22%    100.00% # Class of executed instruction
+svrsys.cpu0.op_class::IprAccess                     0      0.00%    100.00% # Class of executed instruction
+svrsys.cpu0.op_class::InstPrefetch                  0      0.00%    100.00% # Class of executed instruction
+svrsys.cpu0.op_class::total                 144600735                       # Class of executed instruction
+svrsys.cpu0.workload.numSyscalls               423028                       # Number of system calls
+svrsys.cpu1.Branches                         15733254                       # Number of branches fetched
+svrsys.cpu1.committedInsts                   83526678                       # Number of instructions committed
+svrsys.cpu1.committedOps                    143700733                       # Number of ops (including micro ops) committed
+svrsys.cpu1.idle_fraction                    0.000092                       # Percentage of idle cycles
+svrsys.cpu1.not_idle_fraction                0.999908                       # Percentage of non-idle cycles
+svrsys.cpu1.numCycles                       169586957                       # number of cpu cycles simulated
+svrsys.cpu1.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+svrsys.cpu1.numWorkItemsStarted                     0                       # number of work items this cpu started
+svrsys.cpu1.num_busy_cycles              169571314.440897                       # Number of busy cycles
+svrsys.cpu1.num_cc_register_reads            57247657                       # number of times the CC registers were read
+svrsys.cpu1.num_cc_register_writes           32103430                       # number of times the CC registers were written
+svrsys.cpu1.num_conditional_control_insts      9372277                       # number of instructions that are conditional controls
+svrsys.cpu1.num_fp_alu_accesses               1283368                       # Number of float alu accesses
+svrsys.cpu1.num_fp_insts                      1283368                       # number of float instructions
+svrsys.cpu1.num_fp_register_reads             1611873                       # number of times the floating registers were read
+svrsys.cpu1.num_fp_register_writes             852650                       # number of times the floating registers were written
+svrsys.cpu1.num_func_calls                    3361214                       # number of times a function call or return occured
+svrsys.cpu1.num_idle_cycles              15642.559103                       # Number of idle cycles
+svrsys.cpu1.num_int_alu_accesses            139969528                       # Number of integer alu accesses
+svrsys.cpu1.num_int_insts                   139969528                       # number of integer instructions
+svrsys.cpu1.num_int_register_reads          300831585                       # number of times the integer registers were read
+svrsys.cpu1.num_int_register_writes         108186511                       # number of times the integer registers were written
+svrsys.cpu1.num_load_insts                   29412197                       # Number of load instructions
+svrsys.cpu1.num_mem_refs                     45833445                       # number of memory refs
+svrsys.cpu1.num_store_insts                  16421248                       # Number of store instructions
+svrsys.cpu1.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+svrsys.cpu1.num_vec_insts                           0                       # number of vector instructions
+svrsys.cpu1.num_vec_register_reads                  0                       # number of times the vector registers were read
+svrsys.cpu1.num_vec_register_writes                 0                       # number of times the vector registers were written
+svrsys.cpu1.op_class::No_OpClass              2033446      1.41%      1.41% # Class of executed instruction
+svrsys.cpu1.op_class::IntAlu                 94944592     66.06%     67.47% # Class of executed instruction
+svrsys.cpu1.op_class::IntMult                   50187      0.03%     67.51% # Class of executed instruction
+svrsys.cpu1.op_class::IntDiv                   249142      0.17%     67.68% # Class of executed instruction
+svrsys.cpu1.op_class::FloatAdd                  50898      0.04%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatCmp                      0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatCvt                      0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatMult                     0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatMultAcc                  0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatDiv                      0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatMisc                     0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::FloatSqrt                     0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::SimdAdd                     202      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::SimdAddAcc                    0      0.00%     67.72% # Class of executed instruction
+svrsys.cpu1.op_class::SimdAlu                  182566      0.13%     67.84% # Class of executed instruction
+svrsys.cpu1.op_class::SimdCmp                      28      0.00%     67.84% # Class of executed instruction
+svrsys.cpu1.op_class::SimdCvt                  102442      0.07%     67.91% # Class of executed instruction
+svrsys.cpu1.op_class::SimdMisc                 244012      0.17%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdMult                      0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdMultAcc                   0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdShift                     0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdShiftAcc                  0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdDiv                       0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdSqrt                      0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatAdd                  0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatAlu                  0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatCmp                  0      0.00%     68.08% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatCvt              30000      0.02%     68.10% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatDiv              10000      0.01%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatMisc                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatMult                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatMultAcc              0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatSqrt                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdReduceAdd                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdReduceAlu                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdReduceCmp                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatReduceAdd            0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdFloatReduceCmp            0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdAes                       0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdAesMix                    0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdSha1Hash                  0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdSha1Hash2                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdSha256Hash                0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdSha256Hash2               0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdShaSigma2                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdShaSigma3                 0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::SimdPredAlu                   0      0.00%     68.11% # Class of executed instruction
+svrsys.cpu1.op_class::MemRead                29150127     20.28%     88.39% # Class of executed instruction
+svrsys.cpu1.op_class::MemWrite               16101855     11.20%     99.60% # Class of executed instruction
+svrsys.cpu1.op_class::FloatMemRead             262070      0.18%     99.78% # Class of executed instruction
+svrsys.cpu1.op_class::FloatMemWrite            319393      0.22%    100.00% # Class of executed instruction
+svrsys.cpu1.op_class::IprAccess                     0      0.00%    100.00% # Class of executed instruction
+svrsys.cpu1.op_class::InstPrefetch                  0      0.00%    100.00% # Class of executed instruction
+svrsys.cpu1.op_class::total                 143730960                       # Class of executed instruction
+svrsys.cpu1.workload.numSyscalls                30165                       # Number of system calls
+svrsys.membus.snoop_filter.hit_multi_requests            0                       # Number of requests hitting in the snoop filter with multiple (>1) holders of the requested data.
+svrsys.membus.snoop_filter.hit_multi_snoops            0                       # Number of snoops hitting in the snoop filter with multiple (>1) holders of the requested data.
+svrsys.membus.snoop_filter.hit_single_requests            0                       # Number of requests hitting in the snoop filter with a single holder of the requested data.
+svrsys.membus.snoop_filter.hit_single_snoops            0                       # Number of snoops hitting in the snoop filter with a single holder of the requested data.
+svrsys.membus.snoop_filter.tot_requests             0                       # Total number of requests made to the snoop filter.
+svrsys.membus.snoop_filter.tot_snoops               0                       # Total number of snoops made to the snoop filter.
+svrsys.platform.rdma_nic.descDMAReads               0                       # Number of descriptors the device read w/ DMA
+svrsys.platform.rdma_nic.descDMAWrites              0                       # Number of descriptors the device wrote w/ DMA
+svrsys.platform.rdma_nic.descDmaReadBytes            0                       # number of descriptor bytes read w/ DMA
+svrsys.platform.rdma_nic.descDmaWriteBytes            0                       # number of descriptor bytes write w/ DMA
+svrsys.platform.rdma_nic.rxBandwidth         45320815                       # Receive Bandwidth (bits/s)
+svrsys.platform.rdma_nic.rxBytes               480408                       # Bytes Received
+svrsys.platform.rdma_nic.rxPPS                 235916                       # Packet Reception Rate (packets/s)
+svrsys.platform.rdma_nic.rxPackets              20006                       # Number of Packets Received
+svrsys.platform.rdma_nic.totBandwidth     15686628955                       # Total Bandwidth (bits/s)
+svrsys.platform.rdma_nic.totBytes           166280816                       # Total Bytes
+svrsys.platform.rdma_nic.totPPS                825601                       # Total Tranmission Rate (packets/s)
+svrsys.platform.rdma_nic.totPackets             70012                       # Total Packets
+svrsys.platform.rdma_nic.txBandwidth      15641308140                       # Transmit Bandwidth (bits/s)
+svrsys.platform.rdma_nic.txBytes            165800408                       # Bytes Transmitted
+svrsys.platform.rdma_nic.txPPS                 589684                       # Packet Tranmission Rate (packets/s)
+svrsys.platform.rdma_nic.txPackets              50006                       # Number of Packets Transmitted
+cltsys.clk_domain.clock                          1000                       # Clock period in ticks
+cltsys.cpu0.dtb.rdAccesses                   33220290                       # TLB accesses on read requests
+cltsys.cpu0.dtb.wrAccesses                   18671855                       # TLB accesses on write requests
+cltsys.cpu0.dtb.rdMisses                           19                       # TLB misses on read requests
+cltsys.cpu0.dtb.wrMisses                           52                       # TLB misses on write requests
+cltsys.cpu0.dtb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.cpu0.interrupts.clk_domain.clock          8000                       # Clock period in ticks
+cltsys.cpu0.itb.rdAccesses                          0                       # TLB accesses on read requests
+cltsys.cpu0.itb.wrAccesses                   95503226                       # TLB accesses on write requests
+cltsys.cpu0.itb.rdMisses                            0                       # TLB misses on read requests
+cltsys.cpu0.itb.wrMisses                           69                       # TLB misses on write requests
+cltsys.cpu0.itb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.cpu0.power_state.pwrStateResidencyTicks::ON  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.cpu0.thread_0.numInsts                       0                       # Number of Instructions committed
+cltsys.cpu0.thread_0.numOps                         0                       # Number of Ops committed
+cltsys.cpu0.thread_0.numMemRefs                     0                       # Number of Memory References
+cltsys.cpu1.dtb.rdAccesses                   39866799                       # TLB accesses on read requests
+cltsys.cpu1.dtb.wrAccesses                   22408386                       # TLB accesses on write requests
+cltsys.cpu1.dtb.rdMisses                           19                       # TLB misses on read requests
+cltsys.cpu1.dtb.wrMisses                           52                       # TLB misses on write requests
+cltsys.cpu1.dtb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.cpu1.interrupts.clk_domain.clock          8000                       # Clock period in ticks
+cltsys.cpu1.itb.rdAccesses                          0                       # TLB accesses on read requests
+cltsys.cpu1.itb.wrAccesses                  114603017                       # TLB accesses on write requests
+cltsys.cpu1.itb.rdMisses                            0                       # TLB misses on read requests
+cltsys.cpu1.itb.wrMisses                           69                       # TLB misses on write requests
+cltsys.cpu1.itb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.cpu1.power_state.pwrStateResidencyTicks::ON  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.cpu1.thread_0.numInsts                       0                       # Number of Instructions committed
+cltsys.cpu1.thread_0.numOps                         0                       # Number of Ops committed
+cltsys.cpu1.thread_0.numMemRefs                     0                       # Number of Memory References
+cltsys.cpu_clk_domain.clock                       500                       # Clock period in ticks
+cltsys.cpu_voltage_domain.voltage                   1                       # Voltage in Volts
+cltsys.dmabridge.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.iobridge.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.iobus.trans_dist::ReadReq                   80                       # Transaction distribution
+cltsys.iobus.trans_dist::ReadResp                  80                       # Transaction distribution
+cltsys.iobus.trans_dist::WriteReq             2570020                       # Transaction distribution
+cltsys.iobus.trans_dist::WriteResp            2570020                       # Transaction distribution
+cltsys.iobus.pkt_count_cltsys.iobridge.mem_side_port::cltsys.platform.rdma_nic.pio           12                       # Packet count per connected requestor and responder (bytes)
+cltsys.iobus.pkt_count_cltsys.iobridge.mem_side_port::total           12                       # Packet count per connected requestor and responder (bytes)
+cltsys.iobus.pkt_count_cltsys.platform.rdma_nic.dma::cltsys.dmabridge.cpu_side_port      5140188                       # Packet count per connected requestor and responder (bytes)
+cltsys.iobus.pkt_count_cltsys.platform.rdma_nic.dma::total      5140188                       # Packet count per connected requestor and responder (bytes)
+cltsys.iobus.pkt_count::total                 5140200                       # Packet count per connected requestor and responder (bytes)
+cltsys.iobus.pkt_size_cltsys.iobridge.mem_side_port::cltsys.platform.rdma_nic.pio           48                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.iobus.pkt_size_cltsys.iobridge.mem_side_port::total           48                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.iobus.pkt_size_cltsys.platform.rdma_nic.dma::cltsys.dmabridge.cpu_side_port    164482864                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.iobus.pkt_size_cltsys.platform.rdma_nic.dma::total    164482864                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.iobus.pkt_size::total                164482912                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.iobus.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.mem_ctrls.priorityMinLatency      0.000000000000                       # per QoS priority minimum request to response latency (s)
+cltsys.mem_ctrls.priorityMaxLatency      0.000000000000                       # per QoS priority maximum request to response latency (s)
+cltsys.mem_ctrls.numReadWriteTurnArounds            0                       # Number of turnarounds from READ to WRITE
+cltsys.mem_ctrls.numWriteReadTurnArounds            0                       # Number of turnarounds from WRITE to READ
+cltsys.mem_ctrls.numStayReadState                   0                       # Number of times bus staying in READ state
+cltsys.mem_ctrls.numStayWriteState                  0                       # Number of times bus staying in WRITE state
+cltsys.mem_ctrls.readReqs                           0                       # Number of read requests accepted
+cltsys.mem_ctrls.writeReqs                          0                       # Number of write requests accepted
+cltsys.mem_ctrls.readBursts                         0                       # Number of controller read bursts, including those serviced by the write queue
+cltsys.mem_ctrls.writeBursts                        0                       # Number of controller write bursts, including those merged in the write queue
+cltsys.mem_ctrls.servicedByWrQ                      0                       # Number of controller read bursts serviced by the write queue
+cltsys.mem_ctrls.mergedWrBursts                     0                       # Number of controller write bursts merged with an existing one
+cltsys.mem_ctrls.neitherReadNorWriteReqs            0                       # Number of requests that are neither read nor write
+cltsys.mem_ctrls.avgRdQLen                       0.00                       # Average read queue length when enqueuing
+cltsys.mem_ctrls.avgWrQLen                       0.00                       # Average write queue length when enqueuing
+cltsys.mem_ctrls.numRdRetry                         0                       # Number of times read queue was full causing retry
+cltsys.mem_ctrls.numWrRetry                         0                       # Number of times write queue was full causing retry
+cltsys.mem_ctrls.readPktSize::0                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.readPktSize::1                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.readPktSize::2                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.readPktSize::3                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.readPktSize::4                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.readPktSize::5                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.readPktSize::6                     0                       # Read request sizes (log2)
+cltsys.mem_ctrls.writePktSize::0                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.writePktSize::1                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.writePktSize::2                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.writePktSize::3                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.writePktSize::4                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.writePktSize::5                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.writePktSize::6                    0                       # Write request sizes (log2)
+cltsys.mem_ctrls.rdQLenPdf::0                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::1                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::2                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::3                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::4                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::5                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::6                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::7                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::8                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::9                       0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::10                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::11                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::12                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::13                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::14                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::15                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::16                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::17                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::18                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::19                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::20                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::21                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::22                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::23                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::24                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::25                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::26                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::27                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::28                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::29                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::30                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.rdQLenPdf::31                      0                       # What read queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::0                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::1                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::2                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::3                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::4                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::5                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::6                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::7                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::8                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::9                       0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::10                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::11                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::12                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::13                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::14                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::15                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::16                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::17                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::18                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::19                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::20                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::21                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::22                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::23                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::24                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::25                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::26                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::27                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::28                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::29                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::30                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::31                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::32                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::33                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::34                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::35                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::36                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::37                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::38                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::39                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::40                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::41                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::42                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::43                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::44                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::45                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::46                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::47                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::48                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::49                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::50                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::51                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::52                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::53                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::54                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::55                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::56                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::57                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::58                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::59                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::60                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::61                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::62                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.wrQLenPdf::63                      0                       # What write queue length does an incoming req see
+cltsys.mem_ctrls.bytesReadWrQ                       0                       # Total number of bytes read from write queue
+cltsys.mem_ctrls.bytesReadSys                       0                       # Total read bytes from the system interface side
+cltsys.mem_ctrls.bytesWrittenSys                    0                       # Total written bytes from the system interface side
+cltsys.mem_ctrls.avgRdBWSys                      0.00                       # Average system read bandwidth in MiByte/s
+cltsys.mem_ctrls.avgWrBWSys                      0.00                       # Average system write bandwidth in MiByte/s
+cltsys.mem_ctrls.totGap                             0                       # Total gap between requests
+cltsys.mem_ctrls.avgGap                           nan                       # Average gap between requests
+cltsys.mem_ctrls.dram.bytes_read::.platform.rdma_nic         2528                       # Number of bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_read::.cpu0.inst    764025808                       # Number of bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_read::.cpu0.data    215645198                       # Number of bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_read::.cpu1.inst    916824136                       # Number of bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_read::.cpu1.data    258823289                       # Number of bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_read::total    2155320959                       # Number of bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_inst_read::.cpu0.inst    764025808                       # Number of instructions bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_inst_read::.cpu1.inst    916824136                       # Number of instructions bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_inst_read::total   1680849944                       # Number of instructions bytes read from this memory
+cltsys.mem_ctrls.dram.bytes_written::.platform.rdma_nic    164480336                       # Number of bytes written to this memory
+cltsys.mem_ctrls.dram.bytes_written::.cpu0.data    116120754                       # Number of bytes written to this memory
+cltsys.mem_ctrls.dram.bytes_written::.cpu1.data    139363338                       # Number of bytes written to this memory
+cltsys.mem_ctrls.dram.bytes_written::total    419964428                       # Number of bytes written to this memory
+cltsys.mem_ctrls.dram.num_reads::.platform.rdma_nic           80                       # Number of read requests responded to by this memory
+cltsys.mem_ctrls.dram.num_reads::.cpu0.inst     95503226                       # Number of read requests responded to by this memory
+cltsys.mem_ctrls.dram.num_reads::.cpu0.data     33220289                       # Number of read requests responded to by this memory
+cltsys.mem_ctrls.dram.num_reads::.cpu1.inst    114603017                       # Number of read requests responded to by this memory
+cltsys.mem_ctrls.dram.num_reads::.cpu1.data     39866798                       # Number of read requests responded to by this memory
+cltsys.mem_ctrls.dram.num_reads::total      283193410                       # Number of read requests responded to by this memory
+cltsys.mem_ctrls.dram.num_writes::.platform.rdma_nic      2570014                       # Number of write requests responded to by this memory
+cltsys.mem_ctrls.dram.num_writes::.cpu0.data     18671829                       # Number of write requests responded to by this memory
+cltsys.mem_ctrls.dram.num_writes::.cpu1.data     22408360                       # Number of write requests responded to by this memory
+cltsys.mem_ctrls.dram.num_writes::total      43650203                       # Number of write requests responded to by this memory
+cltsys.mem_ctrls.dram.bw_read::.platform.rdma_nic        29811                       # Total read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_read::.cpu0.inst   9009600183                       # Total read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_read::.cpu0.data   2542946842                       # Total read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_read::.cpu1.inst  10811439636                       # Total read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_read::.cpu1.data   3052114637                       # Total read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_read::total      25416131109                       # Total read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_inst_read::.cpu0.inst   9009600183                       # Instruction read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_inst_read::.cpu1.inst  10811439636                       # Instruction read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_inst_read::total  19821039819                       # Instruction read bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_write::.platform.rdma_nic   1939596869                       # Write bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_write::.cpu0.data   1369327522                       # Write bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_write::.cpu1.data   1643410396                       # Write bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_write::total      4952334787                       # Write bandwidth from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_total::.platform.rdma_nic   1939626680                       # Total bandwidth to/from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_total::.cpu0.inst   9009600183                       # Total bandwidth to/from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_total::.cpu0.data   3912274364                       # Total bandwidth to/from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_total::.cpu1.inst  10811439636                       # Total bandwidth to/from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_total::.cpu1.data   4695525033                       # Total bandwidth to/from this memory (bytes/s)
+cltsys.mem_ctrls.dram.bw_total::total     30368465896                       # Total bandwidth to/from this memory (bytes/s)
+cltsys.mem_ctrls.dram.readBursts                    0                       # Number of DRAM read bursts
+cltsys.mem_ctrls.dram.writeBursts                   0                       # Number of DRAM write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::0            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::1            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::2            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::3            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::4            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::5            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::6            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::7            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::8            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::9            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::10            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::11            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::12            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::13            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::14            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankRdBursts::15            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::0            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::1            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::2            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::3            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::4            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::5            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::6            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::7            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::8            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::9            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::10            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::11            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::12            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::13            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::14            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.perBankWrBursts::15            0                       # Per bank write bursts
+cltsys.mem_ctrls.dram.totQLat                       0                       # Total ticks spent queuing
+cltsys.mem_ctrls.dram.totBusLat                     0                       # Total ticks spent in databus transfers
+cltsys.mem_ctrls.dram.totMemAccLat                  0                       # Total ticks spent from burst creation until serviced by the DRAM
+cltsys.mem_ctrls.dram.avgQLat                     nan                       # Average queueing delay per DRAM burst
+cltsys.mem_ctrls.dram.avgBusLat                   nan                       # Average bus latency per DRAM burst
+cltsys.mem_ctrls.dram.avgMemAccLat                nan                       # Average memory access latency per DRAM burst
+cltsys.mem_ctrls.dram.readRowHits                   0                       # Number of row buffer hits during reads
+cltsys.mem_ctrls.dram.writeRowHits                  0                       # Number of row buffer hits during writes
+cltsys.mem_ctrls.dram.readRowHitRate              nan                       # Row buffer hit rate for reads
+cltsys.mem_ctrls.dram.writeRowHitRate             nan                       # Row buffer hit rate for writes
+cltsys.mem_ctrls.dram.bytesRead                     0                       # Total number of bytes read from DRAM
+cltsys.mem_ctrls.dram.bytesWritten                  0                       # Total number of bytes written to DRAM
+cltsys.mem_ctrls.dram.avgRdBW                       0                       # Average DRAM read bandwidth in MiBytes/s
+cltsys.mem_ctrls.dram.avgWrBW                       0                       # Average DRAM write bandwidth in MiBytes/s
+cltsys.mem_ctrls.dram.peakBW                 12800.00                       # Theoretical peak bandwidth in MiByte/s
+cltsys.mem_ctrls.dram.busUtil                    0.00                       # Data bus utilization in percentage
+cltsys.mem_ctrls.dram.busUtilRead                0.00                       # Data bus utilization in percentage for reads
+cltsys.mem_ctrls.dram.busUtilWrite               0.00                       # Data bus utilization in percentage for writes
+cltsys.mem_ctrls.dram.pageHitRate                 nan                       # Row buffer hit rate, read and write combined
+cltsys.mem_ctrls.dram.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.mem_ctrls.dram.rank0.actEnergy               0                       # Energy for activate commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.preEnergy               0                       # Energy for precharge commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.readEnergy              0                       # Energy for read commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.writeEnergy             0                       # Energy for write commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.refreshEnergy            0                       # Energy for refresh commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.actBackEnergy            0                       # Energy for active background per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.preBackEnergy  32563699200                       # Energy for precharge background per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.actPowerDownEnergy            0                       # Energy for active power-down per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.prePowerDownEnergy            0                       # Energy for precharge power-down per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.selfRefreshEnergy            0                       # Energy for self refresh per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.totalEnergy   32563699200                       # Total energy per rank (pJ)
+cltsys.mem_ctrls.dram.rank0.averagePower          384                       # Core power per rank (mW)
+cltsys.mem_ctrls.dram.rank0.totalIdleTime            0                       # Total Idle time Per DRAM Rank
+cltsys.mem_ctrls.dram.rank0.pwrStateTime::IDLE  84801300000                       # Time in different power states
+cltsys.mem_ctrls.dram.rank0.pwrStateTime::REF            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank0.pwrStateTime::SREF            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank0.pwrStateTime::PRE_PDN            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank0.pwrStateTime::ACT            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank0.pwrStateTime::ACT_PDN            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank1.actEnergy               0                       # Energy for activate commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.preEnergy               0                       # Energy for precharge commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.readEnergy              0                       # Energy for read commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.writeEnergy             0                       # Energy for write commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.refreshEnergy            0                       # Energy for refresh commands per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.actBackEnergy            0                       # Energy for active background per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.preBackEnergy  32563699200                       # Energy for precharge background per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.actPowerDownEnergy            0                       # Energy for active power-down per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.prePowerDownEnergy            0                       # Energy for precharge power-down per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.selfRefreshEnergy            0                       # Energy for self refresh per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.totalEnergy   32563699200                       # Total energy per rank (pJ)
+cltsys.mem_ctrls.dram.rank1.averagePower          384                       # Core power per rank (mW)
+cltsys.mem_ctrls.dram.rank1.totalIdleTime            0                       # Total Idle time Per DRAM Rank
+cltsys.mem_ctrls.dram.rank1.pwrStateTime::IDLE  84801300000                       # Time in different power states
+cltsys.mem_ctrls.dram.rank1.pwrStateTime::REF            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank1.pwrStateTime::SREF            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank1.pwrStateTime::PRE_PDN            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank1.pwrStateTime::ACT            0                       # Time in different power states
+cltsys.mem_ctrls.dram.rank1.pwrStateTime::ACT_PDN            0                       # Time in different power states
+cltsys.mem_ctrls.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.membus.trans_dist::ReadReq           283193410                       # Transaction distribution
+cltsys.membus.trans_dist::ReadResp          283193410                       # Transaction distribution
+cltsys.membus.trans_dist::WriteReq           43650209                       # Transaction distribution
+cltsys.membus.trans_dist::WriteResp          43650209                       # Transaction distribution
+cltsys.membus.pkt_count_cltsys.cpu0.icache_port::cltsys.mem_ctrls.port    191006452                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu0.icache_port::total    191006452                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu0.dcache_port::cltsys.mem_ctrls.port    103784236                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu0.dcache_port::cltsys.iobridge.cpu_side_port            6                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu0.dcache_port::total    103784242                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu1.icache_port::cltsys.mem_ctrls.port    229206034                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu1.icache_port::total    229206034                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu1.dcache_port::cltsys.mem_ctrls.port    124550316                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu1.dcache_port::cltsys.iobridge.cpu_side_port            6                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.cpu1.dcache_port::total    124550322                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.dmabridge.mem_side_port::cltsys.mem_ctrls.port      5140188                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count_cltsys.dmabridge.mem_side_port::total      5140188                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_count::total              653687238                       # Packet count per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu0.icache_port::cltsys.mem_ctrls.port    764025808                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu0.icache_port::total    764025808                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu0.dcache_port::cltsys.mem_ctrls.port    331765952                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu0.dcache_port::cltsys.iobridge.cpu_side_port           24                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu0.dcache_port::total    331765976                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu1.icache_port::cltsys.mem_ctrls.port    916824136                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu1.icache_port::total    916824136                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu1.dcache_port::cltsys.mem_ctrls.port    398186627                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu1.dcache_port::cltsys.iobridge.cpu_side_port           24                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.cpu1.dcache_port::total    398186651                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.dmabridge.mem_side_port::cltsys.mem_ctrls.port    164482864                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size_cltsys.dmabridge.mem_side_port::total    164482864                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.pkt_size::total              2575285435                       # Cumulative packet size per connected requestor and responder (bytes)
+cltsys.membus.snoops                                0                       # Total snoops (count)
+cltsys.membus.snoopTraffic                          0                       # Total snoop traffic (bytes)
+cltsys.membus.snoop_fanout::samples         326843619                       # Request fanout histogram
+cltsys.membus.snoop_fanout::mean                    0                       # Request fanout histogram
+cltsys.membus.snoop_fanout::stdev                   0                       # Request fanout histogram
+cltsys.membus.snoop_fanout::underflows              0      0.00%      0.00% # Request fanout histogram
+cltsys.membus.snoop_fanout::0               326843619    100.00%    100.00% # Request fanout histogram
+cltsys.membus.snoop_fanout::1                       0      0.00%    100.00% # Request fanout histogram
+cltsys.membus.snoop_fanout::2                       0      0.00%    100.00% # Request fanout histogram
+cltsys.membus.snoop_fanout::overflows               0      0.00%    100.00% # Request fanout histogram
+cltsys.membus.snoop_fanout::min_value               0                       # Request fanout histogram
+cltsys.membus.snoop_fanout::max_value               0                       # Request fanout histogram
+cltsys.membus.snoop_fanout::total           326843619                       # Request fanout histogram
+cltsys.membus.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.platform.pci_host.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.platform.rdma_nic.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+cltsys.voltage_domain.voltage                       1                       # Voltage in Volts
+svrsys.clk_domain.clock                          1000                       # Clock period in ticks
+svrsys.cpu0.dtb.rdAccesses                   28785216                       # TLB accesses on read requests
+svrsys.cpu0.dtb.wrAccesses                   15029865                       # TLB accesses on write requests
+svrsys.cpu0.dtb.rdMisses                          104                       # TLB misses on read requests
+svrsys.cpu0.dtb.wrMisses                           55                       # TLB misses on write requests
+svrsys.cpu0.dtb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.cpu0.interrupts.clk_domain.clock          8000                       # Clock period in ticks
+svrsys.cpu0.itb.rdAccesses                          0                       # TLB accesses on read requests
+svrsys.cpu0.itb.wrAccesses                  108657343                       # TLB accesses on write requests
+svrsys.cpu0.itb.rdMisses                            0                       # TLB misses on read requests
+svrsys.cpu0.itb.wrMisses                           70                       # TLB misses on write requests
+svrsys.cpu0.itb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.cpu0.power_state.pwrStateResidencyTicks::ON  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.cpu0.thread_0.numInsts                       0                       # Number of Instructions committed
+svrsys.cpu0.thread_0.numOps                         0                       # Number of Ops committed
+svrsys.cpu0.thread_0.numMemRefs                     0                       # Number of Memory References
+svrsys.cpu1.dtb.rdAccesses                   29412363                       # TLB accesses on read requests
+svrsys.cpu1.dtb.wrAccesses                   16421333                       # TLB accesses on write requests
+svrsys.cpu1.dtb.rdMisses                          104                       # TLB misses on read requests
+svrsys.cpu1.dtb.wrMisses                           55                       # TLB misses on write requests
+svrsys.cpu1.dtb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.cpu1.interrupts.clk_domain.clock          8000                       # Clock period in ticks
+svrsys.cpu1.itb.rdAccesses                          0                       # TLB accesses on read requests
+svrsys.cpu1.itb.wrAccesses                  109412902                       # TLB accesses on write requests
+svrsys.cpu1.itb.rdMisses                            0                       # TLB misses on read requests
+svrsys.cpu1.itb.wrMisses                           70                       # TLB misses on write requests
+svrsys.cpu1.itb.walker.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.cpu1.power_state.pwrStateResidencyTicks::ON  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.cpu1.thread_0.numInsts                       0                       # Number of Instructions committed
+svrsys.cpu1.thread_0.numOps                         0                       # Number of Ops committed
+svrsys.cpu1.thread_0.numMemRefs                     0                       # Number of Memory References
+svrsys.cpu_clk_domain.clock                       500                       # Clock period in ticks
+svrsys.cpu_voltage_domain.voltage                   1                       # Voltage in Volts
+svrsys.dmabridge.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.iobridge.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.iobus.trans_dist::ReadReq              2982955                       # Transaction distribution
+svrsys.iobus.trans_dist::ReadResp             2982955                       # Transaction distribution
+svrsys.iobus.trans_dist::WriteReq               40028                       # Transaction distribution
+svrsys.iobus.trans_dist::WriteResp              40028                       # Transaction distribution
+svrsys.iobus.pkt_count_svrsys.iobridge.mem_side_port::svrsys.platform.rdma_nic.pio       825778                       # Packet count per connected requestor and responder (bytes)
+svrsys.iobus.pkt_count_svrsys.iobridge.mem_side_port::total       825778                       # Packet count per connected requestor and responder (bytes)
+svrsys.iobus.pkt_count_svrsys.platform.rdma_nic.dma::svrsys.dmabridge.cpu_side_port      5220188                       # Packet count per connected requestor and responder (bytes)
+svrsys.iobus.pkt_count_svrsys.platform.rdma_nic.dma::total      5220188                       # Packet count per connected requestor and responder (bytes)
+svrsys.iobus.pkt_count::total                 6045966                       # Packet count per connected requestor and responder (bytes)
+svrsys.iobus.pkt_size_svrsys.iobridge.mem_side_port::svrsys.platform.rdma_nic.pio      1731580                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.iobus.pkt_size_svrsys.iobridge.mem_side_port::total      1731580                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.iobus.pkt_size_svrsys.platform.rdma_nic.dma::svrsys.dmabridge.cpu_side_port    165442864                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.iobus.pkt_size_svrsys.platform.rdma_nic.dma::total    165442864                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.iobus.pkt_size::total                167174444                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.iobus.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.mem_ctrls.priorityMinLatency      0.000000000000                       # per QoS priority minimum request to response latency (s)
+svrsys.mem_ctrls.priorityMaxLatency      0.000000000000                       # per QoS priority maximum request to response latency (s)
+svrsys.mem_ctrls.numReadWriteTurnArounds            0                       # Number of turnarounds from READ to WRITE
+svrsys.mem_ctrls.numWriteReadTurnArounds            0                       # Number of turnarounds from WRITE to READ
+svrsys.mem_ctrls.numStayReadState                   0                       # Number of times bus staying in READ state
+svrsys.mem_ctrls.numStayWriteState                  0                       # Number of times bus staying in WRITE state
+svrsys.mem_ctrls.readReqs                           0                       # Number of read requests accepted
+svrsys.mem_ctrls.writeReqs                          0                       # Number of write requests accepted
+svrsys.mem_ctrls.readBursts                         0                       # Number of controller read bursts, including those serviced by the write queue
+svrsys.mem_ctrls.writeBursts                        0                       # Number of controller write bursts, including those merged in the write queue
+svrsys.mem_ctrls.servicedByWrQ                      0                       # Number of controller read bursts serviced by the write queue
+svrsys.mem_ctrls.mergedWrBursts                     0                       # Number of controller write bursts merged with an existing one
+svrsys.mem_ctrls.neitherReadNorWriteReqs            0                       # Number of requests that are neither read nor write
+svrsys.mem_ctrls.avgRdQLen                       0.00                       # Average read queue length when enqueuing
+svrsys.mem_ctrls.avgWrQLen                       0.00                       # Average write queue length when enqueuing
+svrsys.mem_ctrls.numRdRetry                         0                       # Number of times read queue was full causing retry
+svrsys.mem_ctrls.numWrRetry                         0                       # Number of times write queue was full causing retry
+svrsys.mem_ctrls.readPktSize::0                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.readPktSize::1                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.readPktSize::2                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.readPktSize::3                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.readPktSize::4                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.readPktSize::5                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.readPktSize::6                     0                       # Read request sizes (log2)
+svrsys.mem_ctrls.writePktSize::0                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.writePktSize::1                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.writePktSize::2                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.writePktSize::3                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.writePktSize::4                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.writePktSize::5                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.writePktSize::6                    0                       # Write request sizes (log2)
+svrsys.mem_ctrls.rdQLenPdf::0                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::1                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::2                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::3                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::4                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::5                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::6                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::7                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::8                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::9                       0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::10                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::11                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::12                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::13                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::14                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::15                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::16                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::17                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::18                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::19                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::20                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::21                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::22                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::23                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::24                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::25                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::26                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::27                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::28                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::29                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::30                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.rdQLenPdf::31                      0                       # What read queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::0                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::1                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::2                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::3                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::4                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::5                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::6                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::7                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::8                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::9                       0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::10                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::11                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::12                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::13                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::14                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::15                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::16                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::17                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::18                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::19                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::20                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::21                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::22                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::23                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::24                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::25                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::26                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::27                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::28                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::29                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::30                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::31                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::32                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::33                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::34                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::35                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::36                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::37                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::38                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::39                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::40                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::41                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::42                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::43                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::44                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::45                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::46                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::47                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::48                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::49                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::50                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::51                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::52                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::53                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::54                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::55                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::56                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::57                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::58                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::59                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::60                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::61                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::62                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.wrQLenPdf::63                      0                       # What write queue length does an incoming req see
+svrsys.mem_ctrls.bytesReadWrQ                       0                       # Total number of bytes read from write queue
+svrsys.mem_ctrls.bytesReadSys                       0                       # Total read bytes from the system interface side
+svrsys.mem_ctrls.bytesWrittenSys                    0                       # Total written bytes from the system interface side
+svrsys.mem_ctrls.avgRdBWSys                      0.00                       # Average system read bandwidth in MiByte/s
+svrsys.mem_ctrls.avgWrBWSys                      0.00                       # Average system write bandwidth in MiByte/s
+svrsys.mem_ctrls.totGap                             0                       # Total gap between requests
+svrsys.mem_ctrls.avgGap                           nan                       # Average gap between requests
+svrsys.mem_ctrls.dram.bytes_read::.platform.rdma_nic    165122528                       # Number of bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_read::.cpu0.inst    869258744                       # Number of bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_read::.cpu0.data    185968710                       # Number of bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_read::.cpu1.inst    875303216                       # Number of bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_read::.cpu1.data    183611601                       # Number of bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_read::total    2279264799                       # Number of bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_inst_read::.cpu0.inst    869258744                       # Number of instructions bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_inst_read::.cpu1.inst    875303216                       # Number of instructions bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_inst_read::total   1744561960                       # Number of instructions bytes read from this memory
+svrsys.mem_ctrls.dram.bytes_written::.platform.rdma_nic       320336                       # Number of bytes written to this memory
+svrsys.mem_ctrls.dram.bytes_written::.cpu0.data     98706049                       # Number of bytes written to this memory
+svrsys.mem_ctrls.dram.bytes_written::.cpu1.data    102962249                       # Number of bytes written to this memory
+svrsys.mem_ctrls.dram.bytes_written::total    201988634                       # Number of bytes written to this memory
+svrsys.mem_ctrls.dram.num_reads::.platform.rdma_nic      2590080                       # Number of read requests responded to by this memory
+svrsys.mem_ctrls.dram.num_reads::.cpu0.inst    108657343                       # Number of read requests responded to by this memory
+svrsys.mem_ctrls.dram.num_reads::.cpu0.data     28392306                       # Number of read requests responded to by this memory
+svrsys.mem_ctrls.dram.num_reads::.cpu1.inst    109412902                       # Number of read requests responded to by this memory
+svrsys.mem_ctrls.dram.num_reads::.cpu1.data     29412320                       # Number of read requests responded to by this memory
+svrsys.mem_ctrls.dram.num_reads::total      278464951                       # Number of read requests responded to by this memory
+svrsys.mem_ctrls.dram.num_writes::.platform.rdma_nic        20014                       # Number of write requests responded to by this memory
+svrsys.mem_ctrls.dram.num_writes::.cpu0.data     15019835                       # Number of write requests responded to by this memory
+svrsys.mem_ctrls.dram.num_writes::.cpu1.data     16411303                       # Number of write requests responded to by this memory
+svrsys.mem_ctrls.dram.num_writes::total      31451152                       # Number of write requests responded to by this memory
+svrsys.mem_ctrls.dram.bw_read::.platform.rdma_nic   1947169772                       # Total read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_read::.cpu0.inst  10250535593                       # Total read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_read::.cpu0.data   2192993622                       # Total read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_read::.cpu1.inst  10321813651                       # Total read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_read::.cpu1.data   2165197951                       # Total read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_read::total      26877710589                       # Total read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_inst_read::.cpu0.inst  10250535593                       # Instruction read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_inst_read::.cpu1.inst  10321813651                       # Instruction read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_inst_read::total  20572349245                       # Instruction read bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_write::.platform.rdma_nic      3777489                       # Write bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_write::.cpu0.data   1163968583                       # Write bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_write::.cpu1.data   1214158851                       # Write bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_write::total      2381904924                       # Write bandwidth from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_total::.platform.rdma_nic   1950947261                       # Total bandwidth to/from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_total::.cpu0.inst  10250535593                       # Total bandwidth to/from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_total::.cpu0.data   3356962205                       # Total bandwidth to/from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_total::.cpu1.inst  10321813651                       # Total bandwidth to/from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_total::.cpu1.data   3379356802                       # Total bandwidth to/from this memory (bytes/s)
+svrsys.mem_ctrls.dram.bw_total::total     29259615513                       # Total bandwidth to/from this memory (bytes/s)
+svrsys.mem_ctrls.dram.readBursts                    0                       # Number of DRAM read bursts
+svrsys.mem_ctrls.dram.writeBursts                   0                       # Number of DRAM write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::0            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::1            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::2            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::3            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::4            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::5            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::6            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::7            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::8            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::9            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::10            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::11            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::12            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::13            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::14            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankRdBursts::15            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::0            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::1            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::2            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::3            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::4            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::5            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::6            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::7            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::8            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::9            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::10            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::11            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::12            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::13            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::14            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.perBankWrBursts::15            0                       # Per bank write bursts
+svrsys.mem_ctrls.dram.totQLat                       0                       # Total ticks spent queuing
+svrsys.mem_ctrls.dram.totBusLat                     0                       # Total ticks spent in databus transfers
+svrsys.mem_ctrls.dram.totMemAccLat                  0                       # Total ticks spent from burst creation until serviced by the DRAM
+svrsys.mem_ctrls.dram.avgQLat                     nan                       # Average queueing delay per DRAM burst
+svrsys.mem_ctrls.dram.avgBusLat                   nan                       # Average bus latency per DRAM burst
+svrsys.mem_ctrls.dram.avgMemAccLat                nan                       # Average memory access latency per DRAM burst
+svrsys.mem_ctrls.dram.readRowHits                   0                       # Number of row buffer hits during reads
+svrsys.mem_ctrls.dram.writeRowHits                  0                       # Number of row buffer hits during writes
+svrsys.mem_ctrls.dram.readRowHitRate              nan                       # Row buffer hit rate for reads
+svrsys.mem_ctrls.dram.writeRowHitRate             nan                       # Row buffer hit rate for writes
+svrsys.mem_ctrls.dram.bytesRead                     0                       # Total number of bytes read from DRAM
+svrsys.mem_ctrls.dram.bytesWritten                  0                       # Total number of bytes written to DRAM
+svrsys.mem_ctrls.dram.avgRdBW                       0                       # Average DRAM read bandwidth in MiBytes/s
+svrsys.mem_ctrls.dram.avgWrBW                       0                       # Average DRAM write bandwidth in MiBytes/s
+svrsys.mem_ctrls.dram.peakBW                 12800.00                       # Theoretical peak bandwidth in MiByte/s
+svrsys.mem_ctrls.dram.busUtil                    0.00                       # Data bus utilization in percentage
+svrsys.mem_ctrls.dram.busUtilRead                0.00                       # Data bus utilization in percentage for reads
+svrsys.mem_ctrls.dram.busUtilWrite               0.00                       # Data bus utilization in percentage for writes
+svrsys.mem_ctrls.dram.pageHitRate                 nan                       # Row buffer hit rate, read and write combined
+svrsys.mem_ctrls.dram.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.mem_ctrls.dram.rank0.actEnergy               0                       # Energy for activate commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.preEnergy               0                       # Energy for precharge commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.readEnergy              0                       # Energy for read commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.writeEnergy             0                       # Energy for write commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.refreshEnergy            0                       # Energy for refresh commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.actBackEnergy            0                       # Energy for active background per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.preBackEnergy  32563699200                       # Energy for precharge background per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.actPowerDownEnergy            0                       # Energy for active power-down per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.prePowerDownEnergy            0                       # Energy for precharge power-down per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.selfRefreshEnergy            0                       # Energy for self refresh per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.totalEnergy   32563699200                       # Total energy per rank (pJ)
+svrsys.mem_ctrls.dram.rank0.averagePower          384                       # Core power per rank (mW)
+svrsys.mem_ctrls.dram.rank0.totalIdleTime            0                       # Total Idle time Per DRAM Rank
+svrsys.mem_ctrls.dram.rank0.pwrStateTime::IDLE  84801300000                       # Time in different power states
+svrsys.mem_ctrls.dram.rank0.pwrStateTime::REF            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank0.pwrStateTime::SREF            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank0.pwrStateTime::PRE_PDN            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank0.pwrStateTime::ACT            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank0.pwrStateTime::ACT_PDN            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank1.actEnergy               0                       # Energy for activate commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.preEnergy               0                       # Energy for precharge commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.readEnergy              0                       # Energy for read commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.writeEnergy             0                       # Energy for write commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.refreshEnergy            0                       # Energy for refresh commands per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.actBackEnergy            0                       # Energy for active background per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.preBackEnergy  32563699200                       # Energy for precharge background per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.actPowerDownEnergy            0                       # Energy for active power-down per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.prePowerDownEnergy            0                       # Energy for precharge power-down per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.selfRefreshEnergy            0                       # Energy for self refresh per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.totalEnergy   32563699200                       # Total energy per rank (pJ)
+svrsys.mem_ctrls.dram.rank1.averagePower          384                       # Core power per rank (mW)
+svrsys.mem_ctrls.dram.rank1.totalIdleTime            0                       # Total Idle time Per DRAM Rank
+svrsys.mem_ctrls.dram.rank1.pwrStateTime::IDLE  84801300000                       # Time in different power states
+svrsys.mem_ctrls.dram.rank1.pwrStateTime::REF            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank1.pwrStateTime::SREF            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank1.pwrStateTime::PRE_PDN            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank1.pwrStateTime::ACT            0                       # Time in different power states
+svrsys.mem_ctrls.dram.rank1.pwrStateTime::ACT_PDN            0                       # Time in different power states
+svrsys.mem_ctrls.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.membus.trans_dist::ReadReq           278857826                       # Transaction distribution
+svrsys.membus.trans_dist::ReadResp          278857826                       # Transaction distribution
+svrsys.membus.trans_dist::WriteReq           31471166                       # Transaction distribution
+svrsys.membus.trans_dist::WriteResp          31471166                       # Transaction distribution
+svrsys.membus.pkt_count_svrsys.cpu0.icache_port::svrsys.mem_ctrls.port    217314686                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu0.icache_port::total    217314686                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu0.dcache_port::svrsys.mem_ctrls.port     86824282                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu0.dcache_port::svrsys.iobridge.cpu_side_port       805756                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu0.dcache_port::total     87630038                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu1.icache_port::svrsys.mem_ctrls.port    218825804                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu1.icache_port::total    218825804                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu1.dcache_port::svrsys.mem_ctrls.port     91647246                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu1.dcache_port::svrsys.iobridge.cpu_side_port        20022                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.cpu1.dcache_port::total     91667268                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.dmabridge.mem_side_port::svrsys.mem_ctrls.port      5220188                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count_svrsys.dmabridge.mem_side_port::total      5220188                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_count::total              620657984                       # Packet count per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu0.icache_port::svrsys.mem_ctrls.port    869258744                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu0.icache_port::total    869258744                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu0.dcache_port::svrsys.mem_ctrls.port    284674759                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu0.dcache_port::svrsys.iobridge.cpu_side_port      1651524                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu0.dcache_port::total    286326283                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu1.icache_port::svrsys.mem_ctrls.port    875303216                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu1.icache_port::total    875303216                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu1.dcache_port::svrsys.mem_ctrls.port    286573850                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu1.dcache_port::svrsys.iobridge.cpu_side_port        80056                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.cpu1.dcache_port::total    286653906                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.dmabridge.mem_side_port::svrsys.mem_ctrls.port    165442864                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size_svrsys.dmabridge.mem_side_port::total    165442864                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.pkt_size::total              2482985013                       # Cumulative packet size per connected requestor and responder (bytes)
+svrsys.membus.snoops                                0                       # Total snoops (count)
+svrsys.membus.snoopTraffic                          0                       # Total snoop traffic (bytes)
+svrsys.membus.snoop_fanout::samples         310328992                       # Request fanout histogram
+svrsys.membus.snoop_fanout::mean                    0                       # Request fanout histogram
+svrsys.membus.snoop_fanout::stdev                   0                       # Request fanout histogram
+svrsys.membus.snoop_fanout::underflows              0      0.00%      0.00% # Request fanout histogram
+svrsys.membus.snoop_fanout::0               310328992    100.00%    100.00% # Request fanout histogram
+svrsys.membus.snoop_fanout::1                       0      0.00%    100.00% # Request fanout histogram
+svrsys.membus.snoop_fanout::2                       0      0.00%    100.00% # Request fanout histogram
+svrsys.membus.snoop_fanout::overflows               0      0.00%    100.00% # Request fanout histogram
+svrsys.membus.snoop_fanout::min_value               0                       # Request fanout histogram
+svrsys.membus.snoop_fanout::max_value               0                       # Request fanout histogram
+svrsys.membus.snoop_fanout::total           310328992                       # Request fanout histogram
+svrsys.membus.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.platform.pci_host.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.platform.rdma_nic.power_state.pwrStateResidencyTicks::UNDEFINED  84801300000                       # Cumulative time (in ticks) in various power states
+svrsys.voltage_domain.voltage                       1                       # Voltage in Volts
+
+---------- End Simulation Statistics   ----------
