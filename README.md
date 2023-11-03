@@ -1,6 +1,6 @@
 # RDMA-NIC-Isolation-Research
 
-This repo contains source code for the published paper related to RDMA NIC architecture optimizations for performance isolation [1]. The source code includes circuit-level and system-level evaluations. The circuit-level evaluation is implemented in Verilog and Systemverilog. Thanks Alex Forencich for his verilog-axi implementations [2]. The system-level evaluation is implemented in GEM-5 simulator based on HanGu simulator [3, 4]. Note: the system-level evaluation results are submitted to a journal as an extension to the accepted conference paper.
+This repo contains source code for the published paper related to RDMA NIC architecture optimizations for performance isolation [1]. The source code includes circuit-level and system-level evaluations. The circuit-level evaluation is implemented in Verilog and Systemverilog. Thanks Alex Forencich for his verilog-axi implementations [2]. The system-level evaluation is implemented in GEM-5 simulator based on HanGu simulator [3, 4]. 
 
 [1] Yunkun Liao, Jingya Wu, Wenyan Lu, Xiaowei Li, and Guihai Yan. 2023. Optimize the TX Architecture of RDMA NIC for Performance Isolation in the Cloud Environment. In Proceedings of the Great Lakes Symposium on VLSI 2023 (GLSVLSI '23). Association for Computing Machinery, New York, NY, USA, 29–35. https://doi.org/10.1145/3583781.3590276
 
